@@ -80,7 +80,8 @@ matplotlib-inline==0.1.7
 mdurl==0.1.2
 mistune==3.0.2
 multitasking==0.0.11
-mysql-connector-python==9.2.0  # Fixed: Removed deprecated mysql-connector
+mysql-connector==2.2.9
+mysql-connector-python==9.2.0
 narwhals==1.26.0
 nbclient==0.10.0
 nbconvert==7.16.4
@@ -88,7 +89,7 @@ nbformat==5.10.4
 nest-asyncio==1.6.0
 notebook==7.2.2
 notebook_shim==0.2.4
-numpy==1.26.4  # Fixed: Compatible with Python 3.10
+numpy==2.1.3
 outcome==1.3.0.post0
 overrides==7.7.0
 packaging==24.1
@@ -114,6 +115,8 @@ python-dateutil==2.9.0.post0
 python-dotenv==1.1.0
 python-json-logger==2.0.7
 pytz==2024.2
+pywin32==306
+pywinpty==2.0.13
 PyYAML==6.0.2
 pyzmq==26.2.0
 qrcode==8.0
