@@ -1,0 +1,82 @@
+2025-04-01 14:38:17,509 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-01 14:38:17,511 - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:38:17,512 - INFO - Generated order_id: debdcb15d772
+2025-04-01 14:38:17,512 - INFO - Configured redirect URL: http://192.168.1.6:5000/payment-status?order_id=debdcb15d772
+2025-04-01 14:38:17,515 - ERROR - === QR PROCESS ERROR === Unhandled exception: table transactions has no column named request_log
+Traceback (most recent call last):
+  File "c:\Users\hardi\Desktop\demopay\app1.py", line 151, in process_payment
+    cursor.execute('''
+sqlite3.OperationalError: table transactions has no column named request_log
+2025-04-01 14:38:23,142 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-01 14:38:23,144 - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:38:23,146 - INFO - Generated order_id: e61ff8e16de6
+2025-04-01 14:38:23,146 - INFO - Configured redirect URL: http://192.168.1.6:5000/payment-status?order_id=e61ff8e16de6
+2025-04-01 14:38:23,146 - ERROR - === QR PROCESS ERROR === Unhandled exception: table transactions has no column named request_log
+Traceback (most recent call last):
+  File "c:\Users\hardi\Desktop\demopay\app1.py", line 151, in process_payment
+    cursor.execute('''
+sqlite3.OperationalError: table transactions has no column named request_log
+2025-04-01 14:39:26,649 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-01 14:39:26,650 - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:39:26,651 - INFO - Generated order_id: 413ae7131ffe
+2025-04-01 14:39:26,651 - INFO - Configured redirect URL: http://192.168.1.6:5000/payment-status?order_id=413ae7131ffe
+2025-04-01 14:39:26,653 - ERROR - === QR PROCESS ERROR === Unhandled exception: table transactions has no column named request_log
+Traceback (most recent call last):
+  File "c:\Users\hardi\Desktop\demopay\app1.py", line 151, in process_payment
+    cursor.execute('''
+sqlite3.OperationalError: table transactions has no column named request_log
+2025-04-01 14:42:17,730 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-01 14:42:17,732 - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:42:17,732 - INFO - Generated order_id: e6dfa09ff66d
+2025-04-01 14:42:17,732 - INFO - Configured redirect URL: http://192.168.1.6:5000/payment-status?order_id=e6dfa09ff66d
+2025-04-01 14:42:17,763 - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-01 14:42:17,765 - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-01 14:42:17,769 - INFO - === QR REQUEST === Payload: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'e6dfa09ff66d', 'redirect_url': 'http://192.168.1.6:5000/payment-status?order_id=e6dfa09ff66d', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 14:42:19,115 - INFO - === QR RESPONSE === Status Code: 200
+2025-04-01 14:42:19,115 - INFO - === QR RESPONSE === Data: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'e6dfa09ff66d', 'payment_url': 'https://ekqr.live/payment9/instant-pay/db55acd6e1a3a3b8ddee27c0c2283f591f60887f5ebbad5ca947603756cabc5b', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCfMUrK1743498739&tid=ATCfMUrK1743498739&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN658174349873939&tid=ATCfMUrK1743498739'}}
+2025-04-01 14:42:19,134 - INFO - === QR GENERATION === Payment URL with QR: https://ekqr.live/payment9/instant-pay/db55acd6e1a3a3b8ddee27c0c2283f591f60887f5ebbad5ca947603756cabc5b
+2025-04-01 14:42:19,137 - INFO - === QR REDIRECT === Redirecting user to payment gateway URL
+2025-04-01 14:48:14,439 - INFO - === QR CALLBACK === Request received - Method: GET
+2025-04-01 14:48:14,440 - INFO - === QR REDIRECT CALLBACK === Query parameters: {}
+2025-04-01 14:48:14,440 - INFO - === QR REDIRECT CALLBACK === Order ID: None
+2025-04-01 14:48:14,440 - ERROR - === QR REDIRECT ERROR === Missing order_id in redirect
+2025-04-01 14:51:02,149 - INFO - === QR CALLBACK === Request received - Method: GET
+2025-04-01 14:51:02,150 - INFO - === QR REDIRECT CALLBACK === Query parameters: {'order_id': 'e6dfa09ff66d'}
+2025-04-01 14:51:02,154 - INFO - === QR REDIRECT CALLBACK === Order ID: e6dfa09ff66d
+2025-04-01 14:51:02,160 - INFO - === QR REDIRECT CALLBACK === Found transaction: {'id': 39, 'order_id': 'e6dfa09ff66d', 'status': 'pending', 'amount': '1', 'mobile': '8529402587', 'email': 'hardiksv95@gmail.com', 'utr': None, 'message': 'Payment initiated', 'timestamp': '2025-04-01 14:42:17.745901', 'request_log': '{"timestamp": "2025-04-01T14:42:17.745901", "url": "https://pay.imb.org.in/api/create-order", "method": "POST", "headers": {"Content-Type": "application/x-www-form-urlencoded"}, "payload": {"customer_mobile": "8529402587", "user_token": "5e491c82fc0f1aedddc986828462fc84", "amount": "1", "order_id": "e6dfa09ff66d", "redirect_url": "http://192.168.1.6:5000/payment-status?order_id=e6dfa09ff66d", "remark1": "hardiksv95@gmail.com", "remark2": "Payment via Flask app"}}', 'response_log': '{"timestamp": "2025-04-01T14:42:19.123452", "status_code": 200, "response_data": {"status": true, "message": "Order Created Successfully", "result": {"orderId": "e6dfa09ff66d", "payment_url": "https://ekqr.live/payment9/instant-pay/db55acd6e1a3a3b8ddee27c0c2283f591f60887f5ebbad5ca947603756cabc5b", "paytm_link": "paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCfMUrK1743498739&tid=ATCfMUrK1743498739&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer", "bhim_link": "upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN658174349873939&tid=ATCfMUrK1743498739"}}}'}
+2025-04-01 14:51:02,185 - INFO - === QR REDIRECT CALLBACK === Updated status to success
+2025-04-01 14:51:02,187 - INFO - === QR REDIRECT CALLBACK === Session updated with order data
+2025-04-01 14:51:02,191 - INFO - === QR REDIRECT CALLBACK === Redirecting to payment_success with order_id: e6dfa09ff66d
+2025-04-01 14:51:02,227 - INFO - === QR PAYMENT COMPLETED === Success page loaded for order_id: e6dfa09ff66d
+2025-04-01 14:51:02,237 - INFO - === QR PAYMENT COMPLETED === Transaction details: {'id': 39, 'order_id': 'e6dfa09ff66d', 'status': 'success', 'amount': '1', 'mobile': '8529402587', 'email': 'hardiksv95@gmail.com', 'utr': None, 'message': 'Payment initiated', 'timestamp': '2025-04-01 14:42:17.745901', 'request_log': '{"timestamp": "2025-04-01T14:42:17.745901", "url": "https://pay.imb.org.in/api/create-order", "method": "POST", "headers": {"Content-Type": "application/x-www-form-urlencoded"}, "payload": {"customer_mobile": "8529402587", "user_token": "5e491c82fc0f1aedddc986828462fc84", "amount": "1", "order_id": "e6dfa09ff66d", "redirect_url": "http://192.168.1.6:5000/payment-status?order_id=e6dfa09ff66d", "remark1": "hardiksv95@gmail.com", "remark2": "Payment via Flask app"}}', 'response_log': '{"timestamp": "2025-04-01T14:51:02.160555", "method": "GET", "query_params": {"order_id": "e6dfa09ff66d"}, "headers": {"Host": "192.168.1.6:5000", "Connection": "keep-alive", "Upgrade-Insecure-Requests": "1", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0", "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", "Accept-Encoding": "gzip, deflate", "Accept-Language": "en-US,en;q=0.9", "Cookie": "session=eyJhbW91bnQiOiIxIiwiZW1haWwiOiJoYXJkaWtzdjk1QGdtYWlsLmNvbSIsIm1vYmlsZSI6Ijg1Mjk0MDI1ODciLCJvcmRlcl9pZCI6ImU2ZGZhMDlmZjY2ZCJ9.Z-uvVg.mIEyOs8R8K_iPQZG_mA7q4Gz9F0"}}'}
+2025-04-01 14:51:02,237 - INFO - === QR PAYMENT COMPLETED === Rendering success page with values: amount=1, status=success
+2025-04-01 15:14:05,533 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-01 15:14:05,534 - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 15:14:05,534 - INFO - Generated order_id: cdda521a986f
+2025-04-01 15:14:05,535 - INFO - Configured redirect URL: http://192.168.1.6:5000/payment-status?order_id=cdda521a986f
+2025-04-01 15:14:05,547 - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-01 15:14:05,547 - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-01 15:14:05,548 - INFO - === QR REQUEST === Payload: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'cdda521a986f', 'redirect_url': 'http://192.168.1.6:5000/payment-status?order_id=cdda521a986f', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 15:14:06,302 - INFO - === QR RESPONSE === Status Code: 200
+2025-04-01 15:14:06,305 - INFO - === QR RESPONSE === Data: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'cdda521a986f', 'payment_url': 'https://ekqr.live/payment9/instant-pay/322a19f2d04d9686a7a5b22f9c3dc6a0c5cfd91d89257fb38ad30a4505d8bf27', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCiVXHG1743500646&tid=ATCiVXHG1743500646&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN344174350064676&tid=ATCiVXHG1743500646'}}
+2025-04-01 15:14:06,313 - INFO - === QR GENERATION === Payment URL with QR: https://ekqr.live/payment9/instant-pay/322a19f2d04d9686a7a5b22f9c3dc6a0c5cfd91d89257fb38ad30a4505d8bf27
+2025-04-01 15:14:06,313 - INFO - === QR REDIRECT === Redirecting user to payment gateway URL
+2025-04-01 15:14:31,024 - INFO - === QR CALLBACK === Request received - Method: GET
+2025-04-01 15:14:31,024 - INFO - === QR REDIRECT CALLBACK === Query parameters: {}
+2025-04-01 15:14:31,026 - INFO - === QR REDIRECT CALLBACK === Order ID: None
+2025-04-01 15:14:31,026 - ERROR - === QR REDIRECT ERROR === Missing order_id in redirect
+2025-04-01 15:16:11,615 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-01 15:16:11,619 - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 15:16:11,621 - INFO - Generated order_id: fe46f3bc92c4
+2025-04-01 15:16:11,622 - INFO - Configured redirect URL: http://192.168.1.6:5000/payment-status?order_id=fe46f3bc92c4
+2025-04-01 15:16:11,636 - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-01 15:16:11,637 - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-01 15:16:11,637 - INFO - === QR REQUEST === Payload: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'fe46f3bc92c4', 'redirect_url': 'http://192.168.1.6:5000/payment-status?order_id=fe46f3bc92c4', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 15:16:12,334 - INFO - === QR RESPONSE === Status Code: 200
+2025-04-01 15:16:12,334 - INFO - === QR RESPONSE === Data: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'fe46f3bc92c4', 'payment_url': 'https://ekqr.live/payment9/instant-pay/7e71ea9750841a778cc94d783d530bfc4fbdd4d99773f11a2a64ca0160f76775', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCBDtUI1743500772&tid=ATCBDtUI1743500772&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN904174350077240&tid=ATCBDtUI1743500772'}}
+2025-04-01 15:16:12,347 - INFO - === QR GENERATION === Payment URL with QR: https://ekqr.live/payment9/instant-pay/7e71ea9750841a778cc94d783d530bfc4fbdd4d99773f11a2a64ca0160f76775
+2025-04-01 15:16:12,348 - INFO - === QR REDIRECT === Redirecting user to payment gateway URL
+2025-04-01 15:17:23,208 - INFO - === QR CALLBACK === Request received - Method: GET
+2025-04-01 15:17:23,208 - INFO - === QR REDIRECT CALLBACK === Query parameters: {}
+2025-04-01 15:17:23,208 - INFO - === QR REDIRECT CALLBACK === Order ID: None
+2025-04-01 15:17:23,210 - ERROR - === QR REDIRECT ERROR === Missing order_id in redirect

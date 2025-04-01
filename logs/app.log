@@ -1,0 +1,1163 @@
+2025-03-31 17:55:42,709 - __main__ - INFO - Database initialized successfully!
+2025-03-31 17:55:42,709 - __main__ - INFO - Database initialized successfully!
+2025-03-31 17:55:42,965 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.97:5000
+2025-03-31 17:55:42,966 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 17:55:43,008 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 17:55:44,626 - __main__ - INFO - Database initialized successfully!
+2025-03-31 17:55:44,626 - __main__ - INFO - Database initialized successfully!
+2025-03-31 17:55:44,686 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 17:55:44,694 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 17:56:00,339 - __main__ - INFO - Database initialized successfully!
+2025-03-31 17:56:00,344 - __main__ - INFO - Database initialized successfully!
+2025-03-31 17:56:00,436 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.97:5000
+2025-03-31 17:56:00,436 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 17:56:00,458 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 17:56:01,672 - __main__ - INFO - Database initialized successfully!
+2025-03-31 17:56:01,677 - __main__ - INFO - Database initialized successfully!
+2025-03-31 17:56:01,737 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 17:56:01,744 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 17:56:09,045 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:56:09] "GET / HTTP/1.1" 200 -
+2025-03-31 17:56:09,305 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:56:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-31 17:56:14,341 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-03-31 17:56:14,357 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '0e5cbb60b3de', 'redirect_url': 'http://127.0.0.1:5000/payment-success', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-03-31 17:56:15,851 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '0e5cbb60b3de', 'payment_url': 'https://ekqr.live/payment9/instant-pay/425923b5fe24e53c576bacbf96676a169d65d714121775447828702aabb96fc1', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATC6YBUy1743423977&tid=ATC6YBUy1743423977&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN525174342397794&tid=ATC6YBUy1743423977'}}
+2025-03-31 17:56:15,861 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:56:15] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-03-31 18:37:01,612 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 18:37:01] "GET / HTTP/1.1" 200 -
+2025-03-31 18:37:07,202 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-03-31 18:37:07,251 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '6475ef4ddb3c', 'redirect_url': 'http://localhost:5000/payment-success', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-03-31 18:37:09,568 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-03-31 18:37:09,581 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '4b85b4a5152c', 'redirect_url': 'http://localhost:5000/payment-success', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-03-31 18:37:09,660 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '6475ef4ddb3c', 'payment_url': 'https://ekqr.live/payment9/instant-pay/c1800ed9905021b60a7d1ebbdba056dd6aa3bdd9c463ddd62044ce9334b2a39f', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCrB74S1743426431&tid=ATCrB74S1743426431&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN149174342643114&tid=ATCrB74S1743426431'}}
+2025-03-31 18:37:09,683 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 18:37:09] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-03-31 18:37:10,283 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-03-31 18:37:10,297 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '1c28c5138e71', 'redirect_url': 'http://localhost:5000/payment-success', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-03-31 18:37:10,612 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '4b85b4a5152c', 'payment_url': 'https://ekqr.live/payment9/instant-pay/b1d817217363ec5bf4d6ee56beff16c941a42ad101c3b3b6f882308e3d334925', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCCptN21743426432&tid=ATCCptN21743426432&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN357174342643298&tid=ATCCptN21743426432'}}
+2025-03-31 18:37:10,616 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 18:37:10] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-03-31 18:37:11,313 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '1c28c5138e71', 'payment_url': 'https://ekqr.live/payment9/instant-pay/a8ca19aaaf61b2f8b0e943c5eb2ec014ccae36f8ec71bbdaca51fe9b1d7b9971', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCPa3lv1743426433&tid=ATCPa3lv1743426433&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN869174342643356&tid=ATCPa3lv1743426433'}}
+2025-03-31 18:37:11,317 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 18:37:11] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-03-31 20:06:11,496 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:06:11,496 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:06:11,586 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.97:5000
+2025-03-31 20:06:11,586 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 20:06:11,616 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 20:06:12,491 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:06:12,493 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:06:12,523 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 20:06:12,530 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 20:06:19,002 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 20:06:19] "GET / HTTP/1.1" 200 -
+2025-03-31 20:06:23,152 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-03-31 20:06:23,168 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'aba162e32082', 'redirect_url': 'http://127.0.0.1:5000/payment-success', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-03-31 20:06:25,882 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'aba162e32082', 'payment_url': 'https://ekqr.live/payment9/instant-pay/44d4d1e81355f454da0df8e81814d4695f6a4fa1d4bfa78b929bc2ffcfc6d571', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATC8CiID1743431787&tid=ATC8CiID1743431787&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN361174343178742&tid=ATC8CiID1743431787'}}
+2025-03-31 20:06:25,885 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 20:06:25] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-03-31 20:13:00,491 - werkzeug - INFO - 192.168.1.97 - - [31/Mar/2025 20:13:00] "GET / HTTP/1.1" 200 -
+2025-03-31 20:13:00,711 - werkzeug - INFO - 192.168.1.97 - - [31/Mar/2025 20:13:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-31 20:15:21,613 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 20:15:21] "GET / HTTP/1.1" 200 -
+2025-03-31 20:15:21,804 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 20:15:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-31 20:15:26,447 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-03-31 20:15:26,459 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '76672c42e75c', 'redirect_url': 'http://b46d-103-166-12-226.ngrok-free.app/payment-success', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-03-31 20:15:27,613 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '76672c42e75c', 'payment_url': 'https://ekqr.live/payment9/instant-pay/95dc896beae02bb6cc1cc45ba4926db34a3e098a0a6ab3d6cf90080cd55b6ca2', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCQXv5p1743432329&tid=ATCQXv5p1743432329&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN125174343232915&tid=ATCQXv5p1743432329'}}
+2025-03-31 20:15:27,617 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 20:15:27] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-03-31 20:34:19,889 - werkzeug - INFO -  * Detected change in 'c:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:34:19,897 - werkzeug - INFO -  * Detected change in 'c:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:34:20,548 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 20:34:21,807 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:34:21,814 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:34:21,877 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 20:34:21,889 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 20:34:23,655 - werkzeug - INFO -  * Detected change in 'c:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:34:23,995 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 20:34:24,691 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:34:24,695 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:34:24,721 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 20:34:24,721 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 20:34:25,559 - werkzeug - INFO -  * Detected change in 'c:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:34:25,559 - werkzeug - INFO -  * Detected change in 'c:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:34:25,802 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 20:34:26,483 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:34:26,486 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:34:26,512 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 20:34:26,515 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 20:34:48,841 - werkzeug - INFO -  * Detected change in 'c:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:34:48,842 - werkzeug - INFO -  * Detected change in 'c:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:34:49,652 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 20:34:50,350 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:34:50,353 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:34:50,385 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 20:34:50,389 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 20:36:31,459 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:36:31,474 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:36:31,536 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.97:5000
+2025-03-31 20:36:31,536 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 20:36:31,549 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 20:36:32,158 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:36:32,158 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:36:32,194 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 20:36:32,197 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 20:36:41,711 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 20:36:41] "GET / HTTP/1.1" 200 -
+2025-03-31 20:36:45,510 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-03-31 20:36:45,510 - root - ERROR - Host URL: http://b46d-103-166-12-226.ngrok-free.app
+2025-03-31 20:36:45,526 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '8cb28a82121c', 'redirect_url': 'http://b46d-103-166-12-226.ngrok-free.app/payment-success', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-03-31 20:36:46,681 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '8cb28a82121c', 'payment_url': 'https://ekqr.live/payment9/instant-pay/6ee6afcba0e7e8ef6d97caa30493dcc50084dc89ab183492d0dc71e5835f0b28', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCnJZjD1743433608&tid=ATCnJZjD1743433608&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN575174343360849&tid=ATCnJZjD1743433608'}}
+2025-03-31 20:36:46,685 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 20:36:46] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-03-31 20:40:36,649 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:40:36,649 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:40:36,789 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 20:41:02,545 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:41:02,545 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:41:02,594 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.97:5000
+2025-03-31 20:41:02,594 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 20:41:02,613 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 20:41:03,228 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:41:03,228 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:41:03,273 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 20:41:03,278 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 20:41:12,916 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 20:41:12] "GET / HTTP/1.1" 200 -
+2025-03-31 20:41:16,453 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-03-31 20:41:16,453 - root - ERROR - Host URL: http://b46d-103-166-12-226.ngrok-free.app
+2025-03-31 20:41:16,460 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'cf57ec3dac61', 'redirect_url': 'http://b46d-103-166-12-226.ngrok-free.app/payment-status', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-03-31 20:41:17,613 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'cf57ec3dac61', 'payment_url': 'https://ekqr.live/payment9/instant-pay/171f9e6daccbbd846fc6848194ea1c1566c6df4e99a02352cb4a1344ddd89bad', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCM9Ujr1743433879&tid=ATCM9Ujr1743433879&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN181174343387995&tid=ATCM9Ujr1743433879'}}
+2025-03-31 20:41:17,616 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 20:41:17] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-03-31 20:41:58,273 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 20:41:58] "[31m[1mGET /payment-status HTTP/1.1[0m" 405 -
+2025-03-31 20:44:20,073 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:44:20,074 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:44:20,717 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 20:44:21,518 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:44:21,518 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:44:21,554 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 20:44:21,560 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 20:44:28,531 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:44:28,533 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:44:28,645 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 20:46:34,407 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:46:34,407 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:46:34,461 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.97:5000
+2025-03-31 20:46:34,461 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 20:46:34,473 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 20:46:35,113 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:46:35,116 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:46:35,145 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 20:46:35,145 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 20:46:48,550 - __main__ - INFO - Payment status request received - Method: GET
+2025-03-31 20:46:48,550 - __main__ - INFO - GET params: ImmutableMultiDict([])
+2025-03-31 20:46:48,560 - __main__ - INFO - Redirect: Updated transaction status for order_id cf57ec3dac61 to success
+2025-03-31 20:46:48,562 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 20:46:48] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-03-31 20:46:48,848 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 20:46:48] "GET /payment-success HTTP/1.1" 200 -
+2025-03-31 20:47:08,545 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 20:47:08] "GET /history HTTP/1.1" 200 -
+2025-03-31 20:47:16,702 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 20:47:16] "GET / HTTP/1.1" 200 -
+2025-03-31 20:47:37,558 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-03-31 20:47:37,558 - root - ERROR - Host URL: http://b46d-103-166-12-226.ngrok-free.app
+2025-03-31 20:47:37,567 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '375e299b3fa5', 'redirect_url': 'http://b46d-103-166-12-226.ngrok-free.app/payment-status', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-03-31 20:47:38,679 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '375e299b3fa5', 'payment_url': 'https://ekqr.live/payment9/instant-pay/c2698450ffb3fc0b5474360ccb21da5e1589ddbba0c911a2c4b2fad77e0448ce', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCRCUBb1743434260&tid=ATCRCUBb1743434260&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN772174343426092&tid=ATCRCUBb1743434260'}}
+2025-03-31 20:47:38,694 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 20:47:38] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-03-31 20:48:37,501 - __main__ - INFO - Payment status request received - Method: GET
+2025-03-31 20:48:37,501 - __main__ - INFO - GET params: ImmutableMultiDict([])
+2025-03-31 20:48:37,507 - __main__ - INFO - Redirect: Updated transaction status for order_id 375e299b3fa5 to success
+2025-03-31 20:48:37,508 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 20:48:37] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-03-31 20:48:37,624 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 20:48:37] "GET /payment-success HTTP/1.1" 200 -
+2025-03-31 20:48:42,208 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 20:48:42] "GET /history HTTP/1.1" 200 -
+2025-03-31 20:55:15,783 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:55:15,793 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:55:16,166 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 20:55:17,297 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:55:17,297 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:55:17,350 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 20:55:17,352 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 20:55:27,426 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:55:27,427 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:55:28,464 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 20:55:29,207 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:55:29,219 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:55:29,251 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 20:55:29,258 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 20:55:33,971 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:55:33,972 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:55:34,366 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 20:55:35,031 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:55:35,042 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:55:35,071 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 20:55:35,075 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 20:55:41,200 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:55:41,202 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:55:42,175 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 20:55:42,798 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:55:42,798 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:55:42,827 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 20:55:42,840 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 20:58:24,311 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:58:24,318 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:58:24,687 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:58:24,687 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:58:24,814 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:58:24,814 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:58:24,814 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:58:24,931 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:58:24,931 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:58:24,931 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:58:25,218 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 20:58:26,134 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:58:26,148 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:58:26,195 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 20:58:26,199 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 20:58:30,146 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:58:30,153 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:58:30,200 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.97:5000
+2025-03-31 20:58:30,200 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 20:58:30,212 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 20:58:30,959 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:58:30,959 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:58:30,996 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 20:58:31,000 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 20:59:10,386 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 20:59:10] "GET / HTTP/1.1" 200 -
+2025-03-31 20:59:13,384 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-03-31 20:59:13,386 - root - ERROR - Host URL: http://b46d-103-166-12-226.ngrok-free.app
+2025-03-31 20:59:13,392 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'bd9b5d8b0da5', 'redirect_url': 'http://b46d-103-166-12-226.ngrok-free.app/payment-status', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-03-31 20:59:14,523 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'bd9b5d8b0da5', 'payment_url': 'https://ekqr.live/payment9/instant-pay/aa9d411613af7c56e0957913f2466d36f68081dfead695f8e1de63be26a4d898', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATC6vHxM1743434956&tid=ATC6vHxM1743434956&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN635174343495681&tid=ATC6vHxM1743434956'}}
+2025-03-31 20:59:14,523 - __main__ - ERROR - Error in process_payment: Could not build url for endpoint 'payment-status'. Did you mean 'payment_status' instead?
+Traceback (most recent call last):
+  File "C:\Users\hardi\Desktop\demopay\app.py", line 153, in process_payment
+    return redirect(url_for('payment-status'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hardi\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\helpers.py", line 232, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hardi\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hardi\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hardi\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'payment-status'. Did you mean 'payment_status' instead?
+2025-03-31 20:59:14,528 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\flask\\helpers.py', reloading
+2025-03-31 20:59:14,586 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\flask\\app.py', reloading
+2025-03-31 20:59:14,588 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 20:59:14] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-03-31 20:59:14,588 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\werkzeug\\routing\\map.py', reloading
+2025-03-31 20:59:14,671 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 20:59:14] "GET / HTTP/1.1" 200 -
+2025-03-31 20:59:15,170 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 20:59:15,871 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:59:15,874 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:59:15,907 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 20:59:15,911 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 20:59:18,980 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-03-31 20:59:18,981 - root - ERROR - Host URL: http://b46d-103-166-12-226.ngrok-free.app
+2025-03-31 20:59:18,987 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'e0d33b42b963', 'redirect_url': 'http://b46d-103-166-12-226.ngrok-free.app/payment-status', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-03-31 20:59:20,108 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'e0d33b42b963', 'payment_url': 'https://ekqr.live/payment9/instant-pay/cb936d060dad40b5b2f3c1dcb29fdbb0508dc3fcd0971497618fc43ea70f5866', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCAkgma1743434961&tid=ATCAkgma1743434961&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN693174343496166&tid=ATCAkgma1743434961'}}
+2025-03-31 20:59:20,109 - __main__ - ERROR - Error in process_payment: Could not build url for endpoint 'payment-status'. Did you mean 'payment_status' instead?
+Traceback (most recent call last):
+  File "C:\Users\hardi\Desktop\demopay\app.py", line 153, in process_payment
+    return redirect(url_for('payment-status'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hardi\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\helpers.py", line 232, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hardi\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hardi\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hardi\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'payment-status'. Did you mean 'payment_status' instead?
+2025-03-31 20:59:20,117 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 20:59:20] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-03-31 20:59:20,222 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 20:59:20] "GET / HTTP/1.1" 200 -
+2025-03-31 20:59:25,574 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-03-31 20:59:25,574 - root - ERROR - Host URL: http://b46d-103-166-12-226.ngrok-free.app
+2025-03-31 20:59:25,583 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'c30547dc7492', 'redirect_url': 'http://b46d-103-166-12-226.ngrok-free.app/payment-status', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-03-31 20:59:26,697 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'c30547dc7492', 'payment_url': 'https://ekqr.live/payment9/instant-pay/5df576f6068e2ae0282cf0dfb2f37333f226a0af381afa7ac0b04dfa2678ffed', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCiQbfm1743434968&tid=ATCiQbfm1743434968&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN712174343496883&tid=ATCiQbfm1743434968'}}
+2025-03-31 20:59:26,697 - __main__ - ERROR - Error in process_payment: Could not build url for endpoint 'payment-status'. Did you mean 'payment_status' instead?
+Traceback (most recent call last):
+  File "C:\Users\hardi\Desktop\demopay\app.py", line 153, in process_payment
+    return redirect(url_for('payment-status'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hardi\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\helpers.py", line 232, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hardi\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hardi\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hardi\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'payment-status'. Did you mean 'payment_status' instead?
+2025-03-31 20:59:26,700 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 20:59:26] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-03-31 20:59:26,776 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 20:59:26] "GET / HTTP/1.1" 200 -
+2025-03-31 20:59:51,220 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:59:51,221 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:59:52,055 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 20:59:52,725 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:59:52,725 - __main__ - INFO - Database initialized successfully!
+2025-03-31 20:59:52,772 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 20:59:52,772 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 20:59:58,909 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:59:58,910 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 20:59:59,887 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 21:00:00,580 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:00:00,580 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:00:00,618 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 21:00:00,623 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 21:05:25,923 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:05:25,925 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:05:26,316 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 21:05:27,052 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:05:27,052 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:05:27,082 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 21:05:27,084 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 21:08:28,009 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:08:28,009 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:08:28,060 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.97:5000
+2025-03-31 21:08:28,060 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 21:08:28,077 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 21:08:28,694 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:08:28,699 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:08:28,723 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 21:08:28,739 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 21:08:36,960 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:08:36] "GET / HTTP/1.1" 200 -
+2025-03-31 21:08:40,201 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-03-31 21:08:40,201 - root - ERROR - Host URL: http://b46d-103-166-12-226.ngrok-free.app
+2025-03-31 21:08:40,218 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '6e7e8d65a849', 'redirect_url': 'http://b46d-103-166-12-226.ngrok-free.app/payment-status?order_id=6e7e8d65a849', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-03-31 21:08:41,402 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '6e7e8d65a849', 'payment_url': 'https://ekqr.live/payment9/instant-pay/4999a5741e28966245c478c594ef565246831d0406323881e72b8f2eb84bc127', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCz9L1m1743435523&tid=ATCz9L1m1743435523&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN432174343552327&tid=ATCz9L1m1743435523'}}
+2025-03-31 21:08:41,402 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/4999a5741e28966245c478c594ef565246831d0406323881e72b8f2eb84bc127
+2025-03-31 21:08:41,409 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:08:41] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-03-31 21:09:41,134 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:09:41,325 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:09:41,325 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:09:41,525 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:09:41,525 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:09:41,972 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 21:09:42,744 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:09:42,748 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:09:42,790 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 21:09:42,795 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 21:10:23,261 - werkzeug - INFO - 192.168.1.97 - - [31/Mar/2025 21:10:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-31 21:10:35,613 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:10:35] "GET / HTTP/1.1" 200 -
+2025-03-31 21:10:35,865 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:10:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-31 21:10:47,386 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:10:47] "[32mGET /payment-success HTTP/1.1[0m" 302 -
+2025-03-31 21:10:50,454 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-03-31 21:10:50,454 - root - ERROR - Host URL: http://b46d-103-166-12-226.ngrok-free.app
+2025-03-31 21:10:50,470 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '3ef681ec5972', 'redirect_url': 'http://b46d-103-166-12-226.ngrok-free.app/payment-status?order_id=3ef681ec5972', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-03-31 21:10:51,532 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '3ef681ec5972', 'payment_url': 'https://ekqr.live/payment9/instant-pay/e864a7aa100330a0cf7d2a700250d734d1e8bfe88ba1d66132a59fa56a32d3d8', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCUTOAz1743435653&tid=ATCUTOAz1743435653&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN718174343565389&tid=ATCUTOAz1743435653'}}
+2025-03-31 21:10:51,534 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/e864a7aa100330a0cf7d2a700250d734d1e8bfe88ba1d66132a59fa56a32d3d8
+2025-03-31 21:10:51,535 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:10:51] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-03-31 21:10:51,617 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:10:51] "GET / HTTP/1.1" 200 -
+2025-03-31 21:10:57,818 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:10:57,818 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:10:58,832 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 21:10:59,656 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:10:59,656 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:10:59,696 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 21:10:59,700 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 21:13:15,684 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:13:15,688 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:13:16,028 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 21:13:16,905 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:13:16,918 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:13:16,942 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 21:13:16,946 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 21:17:38,428 - __main__ - INFO - Payment status request received - Method: GET
+2025-03-31 21:17:38,428 - __main__ - INFO - GET params: ImmutableMultiDict([])
+2025-03-31 21:17:38,428 - __main__ - ERROR - Missing order_id in payment status redirect
+2025-03-31 21:17:38,442 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:17:38] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-03-31 21:17:38,472 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:17:38] "GET / HTTP/1.1" 200 -
+2025-03-31 21:17:38,638 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:17:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-31 21:17:45,143 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-03-31 21:17:45,144 - root - ERROR - Host URL: http://127.0.0.1:5000
+2025-03-31 21:17:45,150 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'a4670079da9e', 'redirect_url': 'http://127.0.0.1:5000/payment-status?order_id=a4670079da9e', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-03-31 21:17:46,406 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'a4670079da9e', 'payment_url': 'https://ekqr.live/payment9/instant-pay/37882e9552978e6d51bd80629d7b562c7e0bda5aa215b4a397fd22771c2f49ff', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCupGLv1743436068&tid=ATCupGLv1743436068&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN325174343606813&tid=ATCupGLv1743436068'}}
+2025-03-31 21:17:46,406 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/37882e9552978e6d51bd80629d7b562c7e0bda5aa215b4a397fd22771c2f49ff
+2025-03-31 21:17:46,414 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:17:46] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-03-31 21:17:55,515 - __main__ - INFO - Payment status request received - Method: GET
+2025-03-31 21:17:55,516 - __main__ - INFO - GET params: ImmutableMultiDict([])
+2025-03-31 21:17:55,529 - __main__ - INFO - Redirect: Updated transaction status for order_id a4670079da9e to success
+2025-03-31 21:17:55,531 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:17:55] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-03-31 21:17:55,554 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:17:55] "GET /payment-success HTTP/1.1" 200 -
+2025-03-31 21:22:37,237 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:22:38,293 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 21:22:39,011 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:22:39,014 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:22:39,054 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 21:22:39,058 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 21:22:53,920 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:22:53,920 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:22:53,920 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:22:54,197 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 21:22:54,965 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:22:54,972 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:22:54,999 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 21:22:55,007 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 21:22:56,707 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:22:56,707 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:22:57,117 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 21:22:57,881 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:22:57,888 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:22:57,927 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 21:22:57,935 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 21:23:08,654 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:23:08,656 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:23:09,055 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 21:23:09,914 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:23:22,779 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:23:52,899 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:23:52,900 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:23:52,945 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.97:5000
+2025-03-31 21:23:52,945 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 21:23:52,951 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 21:23:53,616 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:23:53,619 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:23:53,679 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 21:23:53,689 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 21:24:00,414 - werkzeug - INFO - 192.168.1.97 - - [31/Mar/2025 21:24:00] "GET / HTTP/1.1" 200 -
+2025-03-31 21:24:03,726 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-03-31 21:24:03,726 - root - ERROR - Host URL: http://192.168.1.97:5000
+2025-03-31 21:24:03,738 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '508298903191', 'redirect_url': 'http://192.168.1.97:5000/payment-status?order_id=508298903191', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-03-31 21:24:04,829 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '508298903191', 'payment_url': 'https://ekqr.live/payment9/instant-pay/059f578a37f19aee87911d3a8c3466a10b5ac0a79daa723e227a5fbe40ff8ad6', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCsRvy71743436446&tid=ATCsRvy71743436446&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN853174343644664&tid=ATCsRvy71743436446'}}
+2025-03-31 21:24:04,829 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/059f578a37f19aee87911d3a8c3466a10b5ac0a79daa723e227a5fbe40ff8ad6
+2025-03-31 21:24:04,830 - werkzeug - INFO - 192.168.1.97 - - [31/Mar/2025 21:24:04] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-03-31 21:24:23,345 - __main__ - INFO - Request received - Method: GET
+2025-03-31 21:24:23,347 - __main__ - INFO - GET request received - Query Params: ImmutableMultiDict([])
+2025-03-31 21:24:23,349 - __main__ - INFO - Redirecting to success page for order_id a4670079da9e
+2025-03-31 21:24:23,352 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:24:23] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-03-31 21:24:23,378 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:24:23] "GET /payment-success HTTP/1.1" 200 -
+2025-03-31 21:27:15,729 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:27:15,733 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:27:16,083 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 21:27:17,009 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:27:17,009 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:27:17,042 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 21:27:17,050 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 21:28:50,361 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:28:50,362 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:28:51,281 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 21:28:52,042 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:28:52,045 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:28:52,077 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 21:28:52,081 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 21:29:21,702 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:29:21,702 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:29:22,212 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 21:29:22,947 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:29:22,953 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:29:22,990 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 21:29:22,996 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 21:31:59,646 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:31:59,647 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:32:00,360 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 21:32:01,407 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:32:01,409 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:32:01,439 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 21:32:01,444 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 21:32:02,356 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:32:02,358 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:32:02,615 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 21:32:03,474 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:32:03,478 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:32:03,510 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 21:32:03,515 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 21:34:50,937 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:34:50,937 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:34:51,918 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 21:34:52,811 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:34:52,814 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:34:52,849 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 21:34:52,855 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 21:35:36,458 - werkzeug - INFO - 192.168.1.97 - - [31/Mar/2025 21:35:36] "GET / HTTP/1.1" 200 -
+2025-03-31 21:35:45,863 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-03-31 21:35:45,863 - root - ERROR - Host URL: http://192.168.1.97:5000
+2025-03-31 21:35:45,872 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'c64e0fb73616', 'redirect_url': 'http://192.168.1.97:5000/payment-status?order_id=c64e0fb73616', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-03-31 21:35:47,039 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'c64e0fb73616', 'payment_url': 'https://ekqr.live/payment9/instant-pay/d858a587b6e2566613cd8382d7982e21000c132a31c5d44d24114e502c220a9a', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCB9zPC1743437148&tid=ATCB9zPC1743437148&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN376174343714831&tid=ATCB9zPC1743437148'}}
+2025-03-31 21:35:47,040 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/d858a587b6e2566613cd8382d7982e21000c132a31c5d44d24114e502c220a9a
+2025-03-31 21:35:47,043 - werkzeug - INFO - 192.168.1.97 - - [31/Mar/2025 21:35:47] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-03-31 21:35:55,914 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:35:55] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-03-31 21:35:55,934 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:35:55] "GET / HTTP/1.1" 200 -
+2025-03-31 21:36:02,208 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-03-31 21:36:02,211 - root - ERROR - Host URL: http://127.0.0.1:5000
+2025-03-31 21:36:02,215 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '07b564a35793', 'redirect_url': 'http://127.0.0.1:5000/payment-status?order_id=07b564a35793', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-03-31 21:36:03,265 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '07b564a35793', 'payment_url': 'https://ekqr.live/payment9/instant-pay/640c6c152f565bdd7e9bde4bbde33343fa5541c28878be754b7e498c4f1a52e7', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATC1rjZ41743437165&tid=ATC1rjZ41743437165&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN369174343716566&tid=ATC1rjZ41743437165'}}
+2025-03-31 21:36:03,267 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/640c6c152f565bdd7e9bde4bbde33343fa5541c28878be754b7e498c4f1a52e7
+2025-03-31 21:36:03,268 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:36:03] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-03-31 21:36:31,936 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:36:31] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-03-31 21:36:31,954 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:36:31] "GET / HTTP/1.1" 200 -
+2025-03-31 21:36:45,132 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:36:45] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-03-31 21:36:45,150 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:36:45] "GET / HTTP/1.1" 200 -
+2025-03-31 21:36:54,059 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:36:54] "GET /success HTTP/1.1" 200 -
+2025-03-31 21:37:02,129 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:37:02] "GET /history HTTP/1.1" 200 -
+2025-03-31 21:37:12,969 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:37:12] "GET /failure HTTP/1.1" 200 -
+2025-03-31 21:37:17,425 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 21:37:17] "GET /history HTTP/1.1" 200 -
+2025-03-31 21:38:21,992 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:38:21,993 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:38:22,298 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 21:38:23,052 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:38:23,054 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:38:23,092 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 21:38:23,095 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 21:38:23,945 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:38:23,945 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 21:38:24,195 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 21:38:24,871 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:38:24,871 - __main__ - INFO - Database initialized successfully!
+2025-03-31 21:38:24,915 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 21:38:24,915 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 22:35:58,700 - __main__ - INFO - Database initialized successfully!
+2025-03-31 22:35:58,708 - __main__ - INFO - Database initialized successfully!
+2025-03-31 22:35:59,259 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.97:5000
+2025-03-31 22:35:59,259 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 22:35:59,320 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 22:36:01,526 - __main__ - INFO - Database initialized successfully!
+2025-03-31 22:36:01,535 - __main__ - INFO - Database initialized successfully!
+2025-03-31 22:36:01,662 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 22:36:01,672 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 22:36:10,129 - werkzeug - INFO - 192.168.1.97 - - [31/Mar/2025 22:36:10] "GET / HTTP/1.1" 200 -
+2025-03-31 22:36:14,332 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-03-31 22:36:14,335 - root - ERROR - session['order_id']:: 653b73023f3b
+2025-03-31 22:36:14,336 - root - ERROR - Host URL: http://192.168.1.97:5000
+2025-03-31 22:36:14,338 - root - ERROR - redirect_url: http://192.168.1.97:5000/payment-status?order_id=653b73023f3b
+2025-03-31 22:36:14,367 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '653b73023f3b', 'redirect_url': 'http://192.168.1.97:5000/payment-status?order_id=653b73023f3b', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-03-31 22:36:15,611 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '653b73023f3b', 'payment_url': 'https://ekqr.live/payment9/instant-pay/a8ca4b7fbd5756f62b0ad0f3c39400f68f748369f5c0028f9798c8fc95e489dc', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCnmRAf1743440777&tid=ATCnmRAf1743440777&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN249174344077786&tid=ATCnmRAf1743440777'}}
+2025-03-31 22:36:15,615 - root - ERROR - payment_url : https://ekqr.live/payment9/instant-pay/a8ca4b7fbd5756f62b0ad0f3c39400f68f748369f5c0028f9798c8fc95e489dc
+2025-03-31 22:36:15,624 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/a8ca4b7fbd5756f62b0ad0f3c39400f68f748369f5c0028f9798c8fc95e489dc
+2025-03-31 22:36:15,649 - werkzeug - INFO - 192.168.1.97 - - [31/Mar/2025 22:36:15] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-03-31 22:37:17,021 - __main__ - INFO - Payment status request received - Method: GET
+2025-03-31 22:37:17,026 - __main__ - ERROR - GET params: ImmutableMultiDict([])
+2025-03-31 22:37:17,026 - __main__ - ERROR - Session data: <SecureCookieSession {'_flashes': [('error', 'Invalid payment response'), ('error', 'Invalid payment response'), ('error', 'Invalid payment response'), ('error', 'Invalid payment response')], 'amount': '1', 'email': 'hardiksv95@gmail.com', 'mobile': '8529402587', 'order_id': '07b564a35793'}>
+2025-03-31 22:37:17,028 - __main__ - ERROR - Order ID resolved to: 07b564a35793
+2025-03-31 22:37:17,116 - __main__ - INFO - Updated transaction status for order_id 07b564a35793 to success
+2025-03-31 22:37:17,137 - __main__ - INFO - Redirecting to payment_success for order_id: 07b564a35793
+2025-03-31 22:37:17,203 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 22:37:17] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-03-31 22:37:17,300 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 22:37:17] "GET /payment-success HTTP/1.1" 200 -
+2025-03-31 22:39:08,698 - __main__ - INFO - Payment status request received - Method: GET
+2025-03-31 22:39:08,752 - __main__ - ERROR - GET params: ImmutableMultiDict([])
+2025-03-31 22:39:08,820 - __main__ - ERROR - Session data: <SecureCookieSession {'_flashes': [('error', 'Invalid payment response'), ('error', 'Invalid payment response'), ('error', 'Invalid payment response'), ('error', 'Invalid payment response')], 'amount': '1', 'email': 'hardiksv95@gmail.com', 'mobile': '8529402587', 'order_id': '07b564a35793'}>
+2025-03-31 22:39:08,857 - __main__ - ERROR - Order ID resolved to: 07b564a35793
+2025-03-31 22:39:08,876 - __main__ - INFO - Updated transaction status for order_id 07b564a35793 to success
+2025-03-31 22:39:08,918 - __main__ - INFO - Redirecting to payment_success for order_id: 07b564a35793
+2025-03-31 22:39:08,936 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 22:39:08] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-03-31 22:39:08,998 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 22:39:08] "GET /payment-success HTTP/1.1" 200 -
+2025-03-31 22:39:13,918 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 22:39:13] "GET /history HTTP/1.1" 200 -
+2025-03-31 22:49:16,972 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 22:49:16] "GET / HTTP/1.1" 200 -
+2025-03-31 22:49:17,290 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 22:49:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-31 22:49:37,226 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-03-31 22:49:37,233 - root - ERROR - session['order_id']:: 59cb22072ed3
+2025-03-31 22:49:37,236 - root - ERROR - Host URL: http://1564-103-166-12-226.ngrok-free.app
+2025-03-31 22:49:37,239 - root - ERROR - redirect_url: http://1564-103-166-12-226.ngrok-free.app/payment-status?order_id=59cb22072ed3
+2025-03-31 22:49:37,271 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '59cb22072ed3', 'redirect_url': 'http://1564-103-166-12-226.ngrok-free.app/payment-status?order_id=59cb22072ed3', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-03-31 22:49:38,486 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '59cb22072ed3', 'payment_url': 'https://ekqr.live/payment9/instant-pay/9c8a0c32cba925eddc78ba4ab659a0dac9e310b05bcddf235c594a1d044d154f', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATC7cSN81743441580&tid=ATC7cSN81743441580&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN299174344158043&tid=ATC7cSN81743441580'}}
+2025-03-31 22:49:38,487 - root - ERROR - payment_url : https://ekqr.live/payment9/instant-pay/9c8a0c32cba925eddc78ba4ab659a0dac9e310b05bcddf235c594a1d044d154f
+2025-03-31 22:49:38,488 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/9c8a0c32cba925eddc78ba4ab659a0dac9e310b05bcddf235c594a1d044d154f
+2025-03-31 22:49:38,492 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 22:49:38] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-03-31 22:50:58,671 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 22:50:58] "GET / HTTP/1.1" 200 -
+2025-03-31 22:51:17,964 - __main__ - INFO - Payment status request received - Method: GET
+2025-03-31 22:51:17,964 - __main__ - ERROR - GET params: ImmutableMultiDict([])
+2025-03-31 22:51:17,979 - __main__ - ERROR - Session data: <SecureCookieSession {'amount': '1', 'email': 'hardiksv95@gmail.com', 'mobile': '8529402587', 'order_id': '59cb22072ed3'}>
+2025-03-31 22:51:17,980 - __main__ - ERROR - Order ID resolved to: 59cb22072ed3
+2025-03-31 22:51:18,038 - __main__ - INFO - Updated transaction status for order_id 59cb22072ed3 to success
+2025-03-31 22:51:18,043 - __main__ - INFO - Redirecting to payment_success for order_id: 59cb22072ed3
+2025-03-31 22:51:18,045 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 22:51:18] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-03-31 22:51:18,148 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 22:51:18] "GET /payment-success HTTP/1.1" 200 -
+2025-03-31 22:56:09,272 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 22:56:09] "GET /history HTTP/1.1" 200 -
+2025-03-31 22:57:45,319 - werkzeug - INFO -  * Detected change in 'c:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 22:57:45,781 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 22:57:47,474 - __main__ - INFO - Database initialized successfully!
+2025-03-31 22:57:47,474 - __main__ - INFO - Database initialized successfully!
+2025-03-31 22:57:47,524 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 22:57:47,527 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 23:45:30,304 - werkzeug - INFO -  * Detected change in 'c:\\Users\\hardi\\Desktop\\demopay\\app1.py', reloading
+2025-03-31 23:45:30,324 - werkzeug - INFO -  * Detected change in 'c:\\Users\\hardi\\Desktop\\demopay\\app1.py', reloading
+2025-03-31 23:45:31,443 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 23:45:33,701 - __main__ - INFO - Database initialized successfully!
+2025-03-31 23:45:33,710 - __main__ - INFO - Database initialized successfully!
+2025-03-31 23:45:33,756 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 23:45:33,763 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 23:57:55,821 - werkzeug - INFO -  * Detected change in 'c:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 23:57:57,107 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 23:57:59,006 - __main__ - INFO - Database initialized successfully!
+2025-03-31 23:57:59,013 - __main__ - INFO - Database initialized successfully!
+2025-03-31 23:57:59,066 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 23:57:59,083 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-03-31 23:58:01,431 - werkzeug - INFO -  * Detected change in 'c:\\Users\\hardi\\Desktop\\demopay\\app.py', reloading
+2025-03-31 23:58:02,297 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 23:58:05,047 - __main__ - INFO - Database initialized successfully!
+2025-03-31 23:58:05,051 - __main__ - INFO - Database initialized successfully!
+2025-03-31 23:58:05,082 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 23:58:05,082 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-04-01 12:45:27,144 - __main__ - INFO - Database initialized successfully!
+2025-04-01 12:45:27,150 - __main__ - INFO - Database initialized successfully!
+2025-04-01 12:45:27,256 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-01 12:45:27,256 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 12:45:27,286 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-01 12:45:28,090 - __main__ - INFO - Database initialized successfully!
+2025-04-01 12:45:28,093 - __main__ - INFO - Database initialized successfully!
+2025-04-01 12:45:28,136 - werkzeug - WARNING -  * Debugger is active!
+2025-04-01 12:45:28,145 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-04-01 12:45:37,273 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 12:45:37] "GET / HTTP/1.1" 200 -
+2025-04-01 12:45:37,850 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 12:45:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-01 12:45:41,542 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 12:45:41,545 - root - ERROR - session['order_id']:: 071b168230fd
+2025-04-01 12:45:41,545 - root - ERROR - Host URL: http://192.168.1.6:5000
+2025-04-01 12:45:41,545 - root - ERROR - redirect_url: http://192.168.1.6:5000/payment-status?order_id=071b168230fd
+2025-04-01 12:45:41,555 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '071b168230fd', 'redirect_url': 'http://192.168.1.6:5000/payment-status?order_id=071b168230fd', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 12:45:42,355 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '071b168230fd', 'payment_url': 'https://ekqr.live/payment9/instant-pay/0af43b398d86ea0cbae09812396bc1255519e5912eea528b3ed456db0365a9ec', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCSpVoJ1743491742&tid=ATCSpVoJ1743491742&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN676174349174256&tid=ATCSpVoJ1743491742'}}
+2025-04-01 12:45:42,356 - root - ERROR - payment_url : https://ekqr.live/payment9/instant-pay/0af43b398d86ea0cbae09812396bc1255519e5912eea528b3ed456db0365a9ec
+2025-04-01 12:45:42,356 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/0af43b398d86ea0cbae09812396bc1255519e5912eea528b3ed456db0365a9ec
+2025-04-01 12:45:42,358 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 12:45:42] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-01 12:46:45,935 - __main__ - INFO - Payment status request received - Method: GET
+2025-04-01 12:46:45,935 - __main__ - INFO - GET params: ImmutableMultiDict([])
+2025-04-01 12:46:45,935 - __main__ - INFO - Session data: <SecureCookieSession {}>
+2025-04-01 12:46:45,936 - __main__ - INFO - Session Order ID: None
+2025-04-01 12:46:45,936 - __main__ - INFO - Request Args Order ID: None
+2025-04-01 12:46:45,936 - __main__ - ERROR - Missing order_id in payment status redirect
+2025-04-01 12:46:45,936 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 12:46:45] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-04-01 12:46:46,039 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 12:46:46] "GET / HTTP/1.1" 200 -
+2025-04-01 12:46:46,288 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 12:46:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-01 12:46:52,924 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 12:46:52,924 - root - ERROR - session['order_id']:: 6d9ffcc853ff
+2025-04-01 12:46:52,924 - root - ERROR - Host URL: http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app
+2025-04-01 12:46:52,924 - root - ERROR - redirect_url: http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app/payment-status?order_id=6d9ffcc853ff
+2025-04-01 12:46:52,930 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '6d9ffcc853ff', 'redirect_url': 'http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app/payment-status?order_id=6d9ffcc853ff', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 12:46:53,921 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '6d9ffcc853ff', 'payment_url': 'https://ekqr.live/payment9/instant-pay/c46b205c068159accd837f2e010acdbe659a72084f5870ffe526fed7d87ea87f', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCczZ9i1743491814&tid=ATCczZ9i1743491814&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN762174349181450&tid=ATCczZ9i1743491814'}}
+2025-04-01 12:46:53,922 - root - ERROR - payment_url : https://ekqr.live/payment9/instant-pay/c46b205c068159accd837f2e010acdbe659a72084f5870ffe526fed7d87ea87f
+2025-04-01 12:46:53,922 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/c46b205c068159accd837f2e010acdbe659a72084f5870ffe526fed7d87ea87f
+2025-04-01 12:46:53,923 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 12:46:53] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-01 12:47:01,534 - __main__ - INFO - Payment status request received - Method: GET
+2025-04-01 12:47:01,534 - __main__ - INFO - GET params: ImmutableMultiDict([])
+2025-04-01 12:47:01,534 - __main__ - INFO - Session data: <SecureCookieSession {'amount': '1', 'email': 'hardiksv95@gmail.com', 'mobile': '8529402587', 'order_id': '6d9ffcc853ff'}>
+2025-04-01 12:47:01,534 - __main__ - INFO - Session Order ID: 6d9ffcc853ff
+2025-04-01 12:47:01,534 - __main__ - INFO - Request Args Order ID: None
+2025-04-01 12:47:01,544 - __main__ - INFO - Updated transaction status for order_id 6d9ffcc853ff to success
+2025-04-01 12:47:01,547 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 12:47:01] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-04-01 12:47:01,741 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 12:47:01] "GET /payment-success HTTP/1.1" 200 -
+2025-04-01 12:52:13,623 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\flask\\templating.py', reloading
+2025-04-01 12:52:13,644 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\jinja2\\__init__.py', reloading
+2025-04-01 12:52:13,667 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\jinja2\\environment.py', reloading
+2025-04-01 12:52:13,986 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-01 12:52:14,846 - __main__ - INFO - Database initialized successfully!
+2025-04-01 12:52:14,846 - __main__ - INFO - Database initialized successfully!
+2025-04-01 12:52:14,876 - werkzeug - WARNING -  * Debugger is active!
+2025-04-01 12:52:14,884 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-04-01 12:55:34,019 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 12:55:34] "GET / HTTP/1.1" 200 -
+2025-04-01 13:11:45,919 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\logging\\__init__.py', reloading
+2025-04-01 13:11:46,265 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-01 13:11:47,118 - __main__ - INFO - Database initialized successfully!
+2025-04-01 13:11:47,118 - __main__ - INFO - Database initialized successfully!
+2025-04-01 13:11:47,154 - werkzeug - WARNING -  * Debugger is active!
+2025-04-01 13:11:47,158 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-04-01 13:24:55,682 - werkzeug - INFO -  * Detected change in 'c:\\Users\\hardi\\Desktop\\demopay\\app1.py', reloading
+2025-04-01 13:24:55,903 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-01 13:24:56,915 - __main__ - INFO - Database initialized successfully!
+2025-04-01 13:24:56,922 - __main__ - INFO - Database initialized successfully!
+2025-04-01 13:24:56,959 - werkzeug - WARNING -  * Debugger is active!
+2025-04-01 13:24:56,966 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-04-01 13:25:12,121 - werkzeug - INFO -  * Detected change in 'c:\\Users\\hardi\\Desktop\\demopay\\app1.py', reloading
+2025-04-01 13:25:12,124 - werkzeug - INFO -  * Detected change in 'c:\\Users\\hardi\\Desktop\\demopay\\app1.py', reloading
+2025-04-01 13:25:13,075 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-01 13:25:13,746 - __main__ - INFO - Database initialized successfully!
+2025-04-01 13:25:13,749 - __main__ - INFO - Database initialized successfully!
+2025-04-01 13:25:13,782 - werkzeug - WARNING -  * Debugger is active!
+2025-04-01 13:25:13,782 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-04-01 13:25:25,429 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 13:25:25] "GET / HTTP/1.1" 200 -
+2025-04-01 13:25:33,528 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 13:25:33,529 - root - ERROR - session['order_id']:: d703bc1c8ec5
+2025-04-01 13:25:33,530 - root - ERROR - Host URL: http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app
+2025-04-01 13:25:33,531 - root - ERROR - redirect_url: http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app/payment-status?order_id=d703bc1c8ec5
+2025-04-01 13:25:33,539 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'd703bc1c8ec5', 'redirect_url': 'http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app/payment-status?order_id=d703bc1c8ec5', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 13:25:34,365 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'd703bc1c8ec5', 'payment_url': 'https://ekqr.live/payment9/instant-pay/a5b45b21da94f76da7a1d95164f3bf899271ba86ebd5ab1af6ca886bc081faa5', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCPoDLJ1743494134&tid=ATCPoDLJ1743494134&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN650174349413456&tid=ATCPoDLJ1743494134'}}
+2025-04-01 13:25:34,365 - root - ERROR - payment_url : https://ekqr.live/payment9/instant-pay/a5b45b21da94f76da7a1d95164f3bf899271ba86ebd5ab1af6ca886bc081faa5
+2025-04-01 13:25:34,365 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/a5b45b21da94f76da7a1d95164f3bf899271ba86ebd5ab1af6ca886bc081faa5
+2025-04-01 13:25:34,370 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 13:25:34] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-01 13:26:59,707 - __main__ - INFO - Payment status request received - Method: GET
+2025-04-01 13:26:59,707 - __main__ - INFO - GET params: ImmutableMultiDict([])
+2025-04-01 13:26:59,710 - __main__ - INFO - Request Args Order ID: None
+2025-04-01 13:26:59,710 - __main__ - ERROR - Missing order_id in payment status redirect
+2025-04-01 13:26:59,710 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 13:26:59] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-04-01 13:26:59,991 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 13:26:59] "GET / HTTP/1.1" 200 -
+2025-04-01 13:32:22,269 - werkzeug - INFO -  * Detected change in 'c:\\Users\\hardi\\Desktop\\demopay\\app1.py', reloading
+2025-04-01 13:32:22,277 - werkzeug - INFO -  * Detected change in 'c:\\Users\\hardi\\Desktop\\demopay\\app1.py', reloading
+2025-04-01 13:32:22,741 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-01 13:32:23,526 - __main__ - INFO - Database initialized successfully!
+2025-04-01 13:32:23,526 - __main__ - INFO - Database initialized successfully!
+2025-04-01 13:32:23,562 - werkzeug - WARNING -  * Debugger is active!
+2025-04-01 13:32:23,565 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-04-01 13:32:24,844 - werkzeug - INFO -  * Detected change in 'c:\\Users\\hardi\\Desktop\\demopay\\app1.py', reloading
+2025-04-01 13:32:24,854 - werkzeug - INFO -  * Detected change in 'c:\\Users\\hardi\\Desktop\\demopay\\app1.py', reloading
+2025-04-01 13:32:25,652 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-01 13:32:26,306 - __main__ - INFO - Database initialized successfully!
+2025-04-01 13:32:26,306 - __main__ - INFO - Database initialized successfully!
+2025-04-01 13:32:26,336 - werkzeug - WARNING -  * Debugger is active!
+2025-04-01 13:32:26,341 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-04-01 14:05:47,154 - __main__ - INFO - Database initialized successfully!
+2025-04-01 14:05:47,158 - __main__ - INFO - Database initialized successfully!
+2025-04-01 14:05:47,267 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-01 14:05:47,268 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 14:05:47,297 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-01 14:05:48,838 - __main__ - INFO - Database initialized successfully!
+2025-04-01 14:05:48,844 - __main__ - INFO - Database initialized successfully!
+2025-04-01 14:05:48,909 - werkzeug - WARNING -  * Debugger is active!
+2025-04-01 14:05:48,919 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-04-01 14:05:55,082 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:05:55] "GET / HTTP/1.1" 200 -
+2025-04-01 14:06:05,992 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:06:05,995 - root - ERROR - session['order_id']:: b869ea4e440c
+2025-04-01 14:06:05,995 - root - ERROR - Host URL: http://192.168.1.6:5000
+2025-04-01 14:06:05,995 - root - ERROR - redirect_url: http://192.168.1.6:5000/payment-status?order_id=b869ea4e440c
+2025-04-01 14:06:06,030 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'b869ea4e440c', 'redirect_url': 'http://192.168.1.6:5000/payment-status?order_id=b869ea4e440c', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 14:06:07,327 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'b869ea4e440c', 'payment_url': 'https://ekqr.live/payment9/instant-pay/460268c1fb76c382e2098558e29e4127b8b998af77381ea414b761edec50f1c2', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCkweyc1743496567&tid=ATCkweyc1743496567&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN921174349656744&tid=ATCkweyc1743496567'}}
+2025-04-01 14:06:07,327 - root - ERROR - payment_url : https://ekqr.live/payment9/instant-pay/460268c1fb76c382e2098558e29e4127b8b998af77381ea414b761edec50f1c2
+2025-04-01 14:06:07,329 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/460268c1fb76c382e2098558e29e4127b8b998af77381ea414b761edec50f1c2
+2025-04-01 14:06:07,349 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:06:07] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-01 14:06:48,479 - __main__ - INFO - Payment status request received - Method: GET
+2025-04-01 14:06:48,493 - __main__ - INFO - GET params: ImmutableMultiDict([])
+2025-04-01 14:06:48,503 - __main__ - INFO - Request Args Order ID: None
+2025-04-01 14:06:48,503 - __main__ - ERROR - Missing order_id in payment status redirect
+2025-04-01 14:06:48,507 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:06:48] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-04-01 14:06:48,589 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:06:48] "GET / HTTP/1.1" 200 -
+2025-04-01 14:06:48,993 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:06:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-01 14:10:09,761 - __main__ - INFO - Database initialized successfully!
+2025-04-01 14:10:09,765 - __main__ - INFO - Database initialized successfully!
+2025-04-01 14:10:09,893 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-01 14:10:09,894 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 14:10:09,961 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-01 14:10:11,843 - __main__ - INFO - Database initialized successfully!
+2025-04-01 14:10:11,854 - __main__ - INFO - Database initialized successfully!
+2025-04-01 14:10:11,903 - werkzeug - WARNING -  * Debugger is active!
+2025-04-01 14:10:11,907 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-04-01 14:10:16,627 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:10:16] "GET / HTTP/1.1" 200 -
+2025-04-01 14:10:24,355 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:10:24,363 - root - ERROR - session['order_id']:: 074d9c6496db
+2025-04-01 14:10:24,364 - root - ERROR - Host URL: http://192.168.1.6:5000
+2025-04-01 14:10:24,365 - root - ERROR - redirect_url: http://192.168.1.6:5000/payment-status?order_id=074d9c6496db
+2025-04-01 14:10:24,394 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '074d9c6496db', 'redirect_url': 'http://192.168.1.6:5000/payment-status?order_id=074d9c6496db', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 14:10:25,427 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '074d9c6496db', 'payment_url': 'https://ekqr.live/payment9/instant-pay/bb56a90c9f3e49f24bb9f32f8f0bbcc2677e037e370fa909a8f86f214b3937c3', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCHawOP1743496825&tid=ATCHawOP1743496825&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN238174349682556&tid=ATCHawOP1743496825'}}
+2025-04-01 14:10:25,430 - root - ERROR - payment_url : https://ekqr.live/payment9/instant-pay/bb56a90c9f3e49f24bb9f32f8f0bbcc2677e037e370fa909a8f86f214b3937c3
+2025-04-01 14:10:25,432 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/bb56a90c9f3e49f24bb9f32f8f0bbcc2677e037e370fa909a8f86f214b3937c3
+2025-04-01 14:10:25,441 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:10:25] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-01 14:11:07,980 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:11:07,981 - root - ERROR - session['order_id']:: 6149bc15921a
+2025-04-01 14:11:07,985 - root - ERROR - Host URL: http://192.168.1.6:5000
+2025-04-01 14:11:07,987 - root - ERROR - redirect_url: http://192.168.1.6:5000/payment-status?order_id=6149bc15921a
+2025-04-01 14:11:08,024 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '6149bc15921a', 'redirect_url': 'http://192.168.1.6:5000/payment-status?order_id=6149bc15921a', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 14:11:08,759 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '6149bc15921a', 'payment_url': 'https://ekqr.live/payment9/instant-pay/eac23fc8a35181aa80544461801898e85e2f93fef6af426211ecf2aa3c21eb10', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCvBHTA1743496869&tid=ATCvBHTA1743496869&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN320174349686913&tid=ATCvBHTA1743496869'}}
+2025-04-01 14:11:08,759 - root - ERROR - payment_url : https://ekqr.live/payment9/instant-pay/eac23fc8a35181aa80544461801898e85e2f93fef6af426211ecf2aa3c21eb10
+2025-04-01 14:11:08,759 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/eac23fc8a35181aa80544461801898e85e2f93fef6af426211ecf2aa3c21eb10
+2025-04-01 14:11:08,763 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:11:08] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-01 14:11:29,098 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:11:29,107 - root - ERROR - session['order_id']:: 754906b45361
+2025-04-01 14:11:29,112 - root - ERROR - Host URL: http://192.168.1.6:5000
+2025-04-01 14:11:29,115 - root - ERROR - redirect_url: http://192.168.1.6:5000/payment-status?order_id=754906b45361
+2025-04-01 14:11:29,178 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '754906b45361', 'redirect_url': 'http://192.168.1.6:5000/payment-status?order_id=754906b45361', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 14:11:30,248 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '754906b45361', 'payment_url': 'https://ekqr.live/payment9/instant-pay/79db83ed3b329f5992bd4f1e0fc6ed43ba56ca5885f5983bc608d7094397744d', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCaoqyv1743496890&tid=ATCaoqyv1743496890&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN918174349689026&tid=ATCaoqyv1743496890'}}
+2025-04-01 14:11:30,253 - root - ERROR - payment_url : https://ekqr.live/payment9/instant-pay/79db83ed3b329f5992bd4f1e0fc6ed43ba56ca5885f5983bc608d7094397744d
+2025-04-01 14:11:30,254 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/79db83ed3b329f5992bd4f1e0fc6ed43ba56ca5885f5983bc608d7094397744d
+2025-04-01 14:11:30,259 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:11:30] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-01 14:13:14,117 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:13:14,120 - root - ERROR - session['order_id']:: 7fc5292d9e34
+2025-04-01 14:13:14,122 - root - ERROR - Host URL: http://192.168.1.6:5000
+2025-04-01 14:13:14,129 - root - ERROR - redirect_url: http://192.168.1.6:5000/payment-status?order_id=7fc5292d9e34
+2025-04-01 14:13:14,205 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '7fc5292d9e34', 'redirect_url': 'http://192.168.1.6:5000/payment-status?order_id=7fc5292d9e34', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 14:13:15,012 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '7fc5292d9e34', 'payment_url': 'https://ekqr.live/payment9/instant-pay/5a6f18b4b7531ef9c764aa453ca00d229d81ed806658c71f2f40a8039e842fb6', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATC5bgcy1743496995&tid=ATC5bgcy1743496995&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN35617434969954&tid=ATC5bgcy1743496995'}}
+2025-04-01 14:13:15,013 - root - ERROR - payment_url : https://ekqr.live/payment9/instant-pay/5a6f18b4b7531ef9c764aa453ca00d229d81ed806658c71f2f40a8039e842fb6
+2025-04-01 14:13:15,014 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/5a6f18b4b7531ef9c764aa453ca00d229d81ed806658c71f2f40a8039e842fb6
+2025-04-01 14:13:15,015 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:13:15] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-01 14:13:22,268 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:13:22] "GET / HTTP/1.1" 200 -
+2025-04-01 14:13:23,577 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:13:23] "GET / HTTP/1.1" 200 -
+2025-04-01 14:13:24,040 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:13:24] "GET / HTTP/1.1" 200 -
+2025-04-01 14:13:26,008 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:13:26] "GET / HTTP/1.1" 200 -
+2025-04-01 14:13:29,315 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:13:29,320 - root - ERROR - session['order_id']:: 7ec0fb43a2a5
+2025-04-01 14:13:29,321 - root - ERROR - Host URL: http://192.168.1.6:5000
+2025-04-01 14:13:29,321 - root - ERROR - redirect_url: http://192.168.1.6:5000/payment-status?order_id=7ec0fb43a2a5
+2025-04-01 14:13:29,349 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '7ec0fb43a2a5', 'redirect_url': 'http://192.168.1.6:5000/payment-status?order_id=7ec0fb43a2a5', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 14:13:30,159 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '7ec0fb43a2a5', 'payment_url': 'https://ekqr.live/payment9/instant-pay/d5a59d6ca7289f7964680f2728c815c27709a109f6e44f8124aa60e0da272ed6', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCTRrOL1743497010&tid=ATCTRrOL1743497010&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN517174349701033&tid=ATCTRrOL1743497010'}}
+2025-04-01 14:13:30,163 - root - ERROR - payment_url : https://ekqr.live/payment9/instant-pay/d5a59d6ca7289f7964680f2728c815c27709a109f6e44f8124aa60e0da272ed6
+2025-04-01 14:13:30,164 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/d5a59d6ca7289f7964680f2728c815c27709a109f6e44f8124aa60e0da272ed6
+2025-04-01 14:13:30,166 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:13:30] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-01 14:13:40,461 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:13:40,462 - root - ERROR - session['order_id']:: 381ceaa7b5b2
+2025-04-01 14:13:40,463 - root - ERROR - Host URL: http://192.168.1.6:5000
+2025-04-01 14:13:40,463 - root - ERROR - redirect_url: http://192.168.1.6:5000/payment-status?order_id=381ceaa7b5b2
+2025-04-01 14:13:40,480 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '381ceaa7b5b2', 'redirect_url': 'http://192.168.1.6:5000/payment-status?order_id=381ceaa7b5b2', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 14:13:41,370 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '381ceaa7b5b2', 'payment_url': 'https://ekqr.live/payment9/instant-pay/0d67e6cdc685daa966b3e6703a422f1cff6b42331e43d95a07593a4664d123cb', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATC6q5Zv1743497021&tid=ATC6q5Zv1743497021&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN256174349702199&tid=ATC6q5Zv1743497021'}}
+2025-04-01 14:13:41,372 - root - ERROR - payment_url : https://ekqr.live/payment9/instant-pay/0d67e6cdc685daa966b3e6703a422f1cff6b42331e43d95a07593a4664d123cb
+2025-04-01 14:13:41,373 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/0d67e6cdc685daa966b3e6703a422f1cff6b42331e43d95a07593a4664d123cb
+2025-04-01 14:13:41,377 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:13:41] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-01 14:19:24,793 - __main__ - INFO - Payment status request received - Method: GET
+2025-04-01 14:19:24,794 - __main__ - INFO - GET params: ImmutableMultiDict([])
+2025-04-01 14:19:24,795 - __main__ - INFO - Request Args Order ID: None
+2025-04-01 14:19:24,795 - __main__ - ERROR - Missing order_id in payment status redirect
+2025-04-01 14:19:24,797 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:19:24] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-04-01 14:19:24,906 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:19:24] "GET / HTTP/1.1" 200 -
+2025-04-01 14:19:32,059 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:19:32,060 - root - ERROR - session['order_id']:: cd8a2c164265
+2025-04-01 14:19:32,063 - root - ERROR - Host URL: http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app
+2025-04-01 14:19:32,066 - root - ERROR - redirect_url: http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app/payment-status?order_id=cd8a2c164265
+2025-04-01 14:19:32,090 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'cd8a2c164265', 'redirect_url': 'http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app/payment-status?order_id=cd8a2c164265', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 14:19:32,809 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'cd8a2c164265', 'payment_url': 'https://ekqr.live/payment9/instant-pay/107848c2d749eca1aa840b06ee179f8a664251ee6c732140ef8773bc4a1037de', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATClSetk1743497373&tid=ATClSetk1743497373&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN138174349737348&tid=ATClSetk1743497373'}}
+2025-04-01 14:19:32,814 - root - ERROR - payment_url : https://ekqr.live/payment9/instant-pay/107848c2d749eca1aa840b06ee179f8a664251ee6c732140ef8773bc4a1037de
+2025-04-01 14:19:32,814 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/107848c2d749eca1aa840b06ee179f8a664251ee6c732140ef8773bc4a1037de
+2025-04-01 14:19:32,817 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:19:32] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-01 14:19:55,655 - __main__ - INFO - Payment status request received - Method: GET
+2025-04-01 14:19:55,655 - __main__ - INFO - GET params: ImmutableMultiDict([])
+2025-04-01 14:19:55,655 - __main__ - INFO - Request Args Order ID: None
+2025-04-01 14:19:55,659 - __main__ - ERROR - Missing order_id in payment status redirect
+2025-04-01 14:19:55,665 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:19:55] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-04-01 14:19:55,794 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:19:55] "GET / HTTP/1.1" 200 -
+2025-04-01 14:20:24,940 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:20:24,940 - root - ERROR - session['order_id']:: a65fb2b020c1
+2025-04-01 14:20:24,943 - root - ERROR - Host URL: http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app
+2025-04-01 14:20:24,943 - root - ERROR - redirect_url: http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app/payment-status?order_id=a65fb2b020c1
+2025-04-01 14:20:24,958 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'a65fb2b020c1', 'redirect_url': 'http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app/payment-status?order_id=a65fb2b020c1', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 14:20:25,643 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'a65fb2b020c1', 'payment_url': 'https://ekqr.live/payment9/instant-pay/ee4318748bb0b16bb94aaf14999e04799191936dae0593bc4a7e7bf1d5cf9a14', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATChvI7l1743497425&tid=ATChvI7l1743497425&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN301174349742564&tid=ATChvI7l1743497425'}}
+2025-04-01 14:20:25,645 - root - ERROR - payment_url : https://ekqr.live/payment9/instant-pay/ee4318748bb0b16bb94aaf14999e04799191936dae0593bc4a7e7bf1d5cf9a14
+2025-04-01 14:20:25,645 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/ee4318748bb0b16bb94aaf14999e04799191936dae0593bc4a7e7bf1d5cf9a14
+2025-04-01 14:20:25,647 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:20:25] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-01 14:20:58,913 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:20:58] "GET / HTTP/1.1" 200 -
+2025-04-01 14:21:04,707 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:21:04,707 - root - ERROR - session['order_id']:: 1d5eef42e812
+2025-04-01 14:21:04,710 - root - ERROR - Host URL: http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app
+2025-04-01 14:21:04,713 - root - ERROR - redirect_url: http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app/payment-status?order_id=1d5eef42e812
+2025-04-01 14:21:04,748 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '1d5eef42e812', 'redirect_url': 'http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app/payment-status?order_id=1d5eef42e812', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 14:21:05,446 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:21:05] "GET / HTTP/1.1" 200 -
+2025-04-01 14:21:05,648 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:21:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-01 14:21:05,930 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '1d5eef42e812', 'payment_url': 'https://ekqr.live/payment9/instant-pay/141f83fad316fe99ec8b2f93e6dec4c7a8fa3be82488d36117782c294177d44d', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATC4skgF1743497466&tid=ATC4skgF1743497466&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN13417434974664&tid=ATC4skgF1743497466'}}
+2025-04-01 14:21:05,934 - root - ERROR - payment_url : https://ekqr.live/payment9/instant-pay/141f83fad316fe99ec8b2f93e6dec4c7a8fa3be82488d36117782c294177d44d
+2025-04-01 14:21:05,934 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/141f83fad316fe99ec8b2f93e6dec4c7a8fa3be82488d36117782c294177d44d
+2025-04-01 14:21:05,936 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:21:05] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-01 14:21:18,073 - __main__ - INFO - Processing payment: Amount=1, Mobile=9413782236, Email=nitesh.sharmaa96@gmail.com
+2025-04-01 14:21:18,073 - root - ERROR - session['order_id']:: a00eb0936787
+2025-04-01 14:21:18,073 - root - ERROR - Host URL: http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app
+2025-04-01 14:21:18,073 - root - ERROR - redirect_url: http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app/payment-status?order_id=a00eb0936787
+2025-04-01 14:21:18,107 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '9413782236', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'a00eb0936787', 'redirect_url': 'http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app/payment-status?order_id=a00eb0936787', 'remark1': 'nitesh.sharmaa96@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 14:21:19,222 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'a00eb0936787', 'payment_url': 'https://ekqr.live/payment9/instant-pay/ad5e5696a85a96105911dd0be7114637060081fb574d3af2eb7d0a7eca2347ce', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCsGPSC1743497479&tid=ATCsGPSC1743497479&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN914174349747988&tid=ATCsGPSC1743497479'}}
+2025-04-01 14:21:19,223 - root - ERROR - payment_url : https://ekqr.live/payment9/instant-pay/ad5e5696a85a96105911dd0be7114637060081fb574d3af2eb7d0a7eca2347ce
+2025-04-01 14:21:19,223 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/ad5e5696a85a96105911dd0be7114637060081fb574d3af2eb7d0a7eca2347ce
+2025-04-01 14:21:19,226 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:21:19] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-01 14:22:13,699 - __main__ - INFO - Payment status request received - Method: GET
+2025-04-01 14:22:13,699 - __main__ - INFO - GET params: ImmutableMultiDict([])
+2025-04-01 14:22:13,701 - __main__ - INFO - Request Args Order ID: None
+2025-04-01 14:22:13,711 - __main__ - ERROR - Missing order_id in payment status redirect
+2025-04-01 14:22:13,717 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:22:13] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-04-01 14:22:13,830 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:22:13] "GET / HTTP/1.1" 200 -
+2025-04-01 14:23:35,447 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:23:35] "GET /payment-success HTTP/1.1" 200 -
+2025-04-01 14:23:41,186 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:23:41] "GET /payment-success HTTP/1.1" 200 -
+2025-04-01 14:23:44,653 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:23:44] "GET /payment-success HTTP/1.1" 200 -
+2025-04-01 14:24:06,801 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:24:06] "GET /payment-success HTTP/1.1" 200 -
+2025-04-01 14:24:29,627 - __main__ - INFO - Payment status request received - Method: GET
+2025-04-01 14:24:29,627 - __main__ - INFO - GET params: ImmutableMultiDict([])
+2025-04-01 14:24:29,627 - __main__ - INFO - Request Args Order ID: None
+2025-04-01 14:24:29,627 - __main__ - ERROR - Missing order_id in payment status redirect
+2025-04-01 14:24:29,631 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:24:29] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-04-01 14:24:29,754 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:24:29] "GET / HTTP/1.1" 200 -
+2025-04-01 14:24:41,237 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:24:41,237 - root - ERROR - session['order_id']:: 98ae0920da9d
+2025-04-01 14:24:41,237 - root - ERROR - Host URL: http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app
+2025-04-01 14:24:41,237 - root - ERROR - redirect_url: http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app/payment-status?order_id=98ae0920da9d
+2025-04-01 14:24:41,249 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '98ae0920da9d', 'redirect_url': 'http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app/payment-status?order_id=98ae0920da9d', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 14:24:42,544 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '98ae0920da9d', 'payment_url': 'https://ekqr.live/payment9/instant-pay/24d7ae1516fe2b74325b8159137064124944de2b6aaa23dc696a94cf2702841b', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATC86knp1743497682&tid=ATC86knp1743497682&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN720174349768218&tid=ATC86knp1743497682'}}
+2025-04-01 14:24:42,546 - root - ERROR - payment_url : https://ekqr.live/payment9/instant-pay/24d7ae1516fe2b74325b8159137064124944de2b6aaa23dc696a94cf2702841b
+2025-04-01 14:24:42,546 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/24d7ae1516fe2b74325b8159137064124944de2b6aaa23dc696a94cf2702841b
+2025-04-01 14:24:42,550 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:24:42] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-01 14:25:20,232 - __main__ - INFO - Payment status request received - Method: GET
+2025-04-01 14:25:20,234 - __main__ - INFO - GET params: ImmutableMultiDict([])
+2025-04-01 14:25:20,234 - __main__ - INFO - Request Args Order ID: None
+2025-04-01 14:25:20,234 - __main__ - ERROR - Missing order_id in payment status redirect
+2025-04-01 14:25:20,236 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:25:20] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-04-01 14:25:20,521 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:25:20] "GET / HTTP/1.1" 200 -
+2025-04-01 14:25:29,117 - __main__ - INFO - Payment status request received - Method: GET
+2025-04-01 14:25:29,119 - __main__ - INFO - GET params: ImmutableMultiDict([])
+2025-04-01 14:25:29,119 - __main__ - INFO - Request Args Order ID: None
+2025-04-01 14:25:29,119 - __main__ - ERROR - Missing order_id in payment status redirect
+2025-04-01 14:25:29,126 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:25:29] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-04-01 14:25:29,282 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:25:29] "GET / HTTP/1.1" 200 -
+2025-04-01 14:25:37,120 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:25:37,122 - root - ERROR - session['order_id']:: c7c364ffdffb
+2025-04-01 14:25:37,122 - root - ERROR - Host URL: http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app
+2025-04-01 14:25:37,124 - root - ERROR - redirect_url: http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app/payment-status?order_id=c7c364ffdffb
+2025-04-01 14:25:37,136 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'c7c364ffdffb', 'redirect_url': 'http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app/payment-status?order_id=c7c364ffdffb', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 14:25:38,381 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'c7c364ffdffb', 'payment_url': 'https://ekqr.live/payment9/instant-pay/5f0cf888120be4808173cbdae8f73ba2c6fad6f1af18b8127d0801a414aa4a7e', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCnoNwv1743497738&tid=ATCnoNwv1743497738&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN879174349773888&tid=ATCnoNwv1743497738'}}
+2025-04-01 14:25:38,381 - root - ERROR - payment_url : https://ekqr.live/payment9/instant-pay/5f0cf888120be4808173cbdae8f73ba2c6fad6f1af18b8127d0801a414aa4a7e
+2025-04-01 14:25:38,397 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/5f0cf888120be4808173cbdae8f73ba2c6fad6f1af18b8127d0801a414aa4a7e
+2025-04-01 14:25:38,397 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:25:38] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-01 14:25:56,805 - __main__ - INFO - Payment status request received - Method: GET
+2025-04-01 14:25:56,806 - __main__ - INFO - GET params: ImmutableMultiDict([])
+2025-04-01 14:25:56,808 - __main__ - INFO - Request Args Order ID: None
+2025-04-01 14:25:56,808 - __main__ - ERROR - Missing order_id in payment status redirect
+2025-04-01 14:25:56,812 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:25:56] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-04-01 14:25:57,104 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:25:57] "GET / HTTP/1.1" 200 -
+2025-04-01 14:27:03,194 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:27:03] "GET / HTTP/1.1" 200 -
+2025-04-01 14:27:11,968 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:27:11,968 - root - ERROR - session['order_id']:: b0ed777d3018
+2025-04-01 14:27:11,968 - root - ERROR - Host URL: http://127.0.0.1:5000
+2025-04-01 14:27:11,968 - root - ERROR - redirect_url: http://127.0.0.1:5000/payment-status?order_id=b0ed777d3018
+2025-04-01 14:27:11,997 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'b0ed777d3018', 'redirect_url': 'http://127.0.0.1:5000/payment-status?order_id=b0ed777d3018', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 14:27:13,470 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'b0ed777d3018', 'payment_url': 'https://ekqr.live/payment9/instant-pay/9b43141d84b035de8f03d0d0bea497d9bd8c9bcd33af8449879e0971b4756310', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCXdJi51743497833&tid=ATCXdJi51743497833&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN354174349783314&tid=ATCXdJi51743497833'}}
+2025-04-01 14:27:13,470 - root - ERROR - payment_url : https://ekqr.live/payment9/instant-pay/9b43141d84b035de8f03d0d0bea497d9bd8c9bcd33af8449879e0971b4756310
+2025-04-01 14:27:13,470 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/9b43141d84b035de8f03d0d0bea497d9bd8c9bcd33af8449879e0971b4756310
+2025-04-01 14:27:13,485 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:27:13] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-01 14:27:44,915 - __main__ - INFO - Payment status request received - Method: GET
+2025-04-01 14:27:44,916 - __main__ - INFO - GET params: ImmutableMultiDict([])
+2025-04-01 14:27:44,916 - __main__ - INFO - Request Args Order ID: None
+2025-04-01 14:27:44,916 - __main__ - ERROR - Missing order_id in payment status redirect
+2025-04-01 14:27:44,916 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:27:44] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-04-01 14:27:45,604 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:27:45] "GET / HTTP/1.1" 200 -
+2025-04-01 14:27:55,362 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:27:55,365 - root - ERROR - session['order_id']:: 70f2832253b7
+2025-04-01 14:27:55,366 - root - ERROR - Host URL: http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app
+2025-04-01 14:27:55,367 - root - ERROR - redirect_url: http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app/payment-status?order_id=70f2832253b7
+2025-04-01 14:27:55,379 - __main__ - INFO - Sending request to payment gateway: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '70f2832253b7', 'redirect_url': 'http://861f-2401-4900-1c7a-4b8d-c9be-3190-c7e6-d64b.ngrok-free.app/payment-status?order_id=70f2832253b7', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 14:27:56,716 - __main__ - INFO - Payment gateway response: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '70f2832253b7', 'payment_url': 'https://ekqr.live/payment9/instant-pay/ee2c571600479728875d193e03ff2a03e193e0708ca629843ce0bbbc1e132828', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCaUT791743497876&tid=ATCaUT791743497876&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN694174349787611&tid=ATCaUT791743497876'}}
+2025-04-01 14:27:56,716 - root - ERROR - payment_url : https://ekqr.live/payment9/instant-pay/ee2c571600479728875d193e03ff2a03e193e0708ca629843ce0bbbc1e132828
+2025-04-01 14:27:56,723 - root - INFO - Redirecting to payment URL: https://ekqr.live/payment9/instant-pay/ee2c571600479728875d193e03ff2a03e193e0708ca629843ce0bbbc1e132828
+2025-04-01 14:27:56,726 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:27:56] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-01 14:28:30,744 - __main__ - INFO - Payment status request received - Method: GET
+2025-04-01 14:28:30,745 - __main__ - INFO - GET params: ImmutableMultiDict([])
+2025-04-01 14:28:30,746 - __main__ - INFO - Request Args Order ID: None
+2025-04-01 14:28:30,747 - __main__ - ERROR - Missing order_id in payment status redirect
+2025-04-01 14:28:30,749 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:28:30] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-04-01 14:28:31,195 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 14:28:31] "GET / HTTP/1.1" 200 -
+2025-04-01 14:37:42,157 - werkzeug - INFO -  * Detected change in 'c:\\Users\\hardi\\Desktop\\demopay\\app1.py', reloading
+2025-04-01 14:37:42,655 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-01 14:37:44,604 - __main__ - INFO - Database initialized successfully!
+2025-04-01 14:37:44,604 - __main__ - INFO - Database initialized successfully!
+2025-04-01 14:37:44,644 - werkzeug - WARNING -  * Debugger is active!
+2025-04-01 14:37:44,651 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-04-01 14:38:05,763 - __main__ - INFO - Database initialized successfully!
+2025-04-01 14:38:05,774 - __main__ - INFO - Database initialized successfully!
+2025-04-01 14:38:06,321 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-01 14:38:06,321 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 14:38:06,356 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-01 14:38:07,938 - __main__ - INFO - Database initialized successfully!
+2025-04-01 14:38:07,940 - __main__ - INFO - Database initialized successfully!
+2025-04-01 14:38:08,010 - werkzeug - WARNING -  * Debugger is active!
+2025-04-01 14:38:08,017 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-04-01 14:38:13,427 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:38:13] "GET / HTTP/1.1" 200 -
+2025-04-01 14:38:17,509 - qr_payment - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-01 14:38:17,511 - qr_payment - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:38:17,511 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:38:17,512 - qr_payment - INFO - Generated order_id: debdcb15d772
+2025-04-01 14:38:17,512 - qr_payment - INFO - Configured redirect URL: http://192.168.1.6:5000/payment-status?order_id=debdcb15d772
+2025-04-01 14:38:17,515 - qr_payment - ERROR - === QR PROCESS ERROR === Unhandled exception: table transactions has no column named request_log
+Traceback (most recent call last):
+  File "c:\Users\hardi\Desktop\demopay\app1.py", line 151, in process_payment
+    cursor.execute('''
+sqlite3.OperationalError: table transactions has no column named request_log
+2025-04-01 14:38:17,522 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:38:17] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-01 14:38:17,543 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:38:17] "GET / HTTP/1.1" 200 -
+2025-04-01 14:38:23,142 - qr_payment - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-01 14:38:23,144 - qr_payment - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:38:23,146 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:38:23,146 - qr_payment - INFO - Generated order_id: e61ff8e16de6
+2025-04-01 14:38:23,146 - qr_payment - INFO - Configured redirect URL: http://192.168.1.6:5000/payment-status?order_id=e61ff8e16de6
+2025-04-01 14:38:23,146 - qr_payment - ERROR - === QR PROCESS ERROR === Unhandled exception: table transactions has no column named request_log
+Traceback (most recent call last):
+  File "c:\Users\hardi\Desktop\demopay\app1.py", line 151, in process_payment
+    cursor.execute('''
+sqlite3.OperationalError: table transactions has no column named request_log
+2025-04-01 14:38:23,146 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:38:23] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-01 14:38:23,180 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:38:23] "GET / HTTP/1.1" 200 -
+2025-04-01 14:39:02,273 - __main__ - INFO - Database initialized successfully!
+2025-04-01 14:39:02,279 - __main__ - INFO - Database initialized successfully!
+2025-04-01 14:39:02,381 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-01 14:39:02,381 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 14:39:02,403 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-01 14:39:03,392 - __main__ - INFO - Database initialized successfully!
+2025-04-01 14:39:03,396 - __main__ - INFO - Database initialized successfully!
+2025-04-01 14:39:03,447 - werkzeug - WARNING -  * Debugger is active!
+2025-04-01 14:39:03,451 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-04-01 14:39:08,355 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:39:08] "GET / HTTP/1.1" 200 -
+2025-04-01 14:39:26,649 - qr_payment - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-01 14:39:26,650 - qr_payment - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:39:26,651 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:39:26,651 - qr_payment - INFO - Generated order_id: 413ae7131ffe
+2025-04-01 14:39:26,651 - qr_payment - INFO - Configured redirect URL: http://192.168.1.6:5000/payment-status?order_id=413ae7131ffe
+2025-04-01 14:39:26,653 - qr_payment - ERROR - === QR PROCESS ERROR === Unhandled exception: table transactions has no column named request_log
+Traceback (most recent call last):
+  File "c:\Users\hardi\Desktop\demopay\app1.py", line 151, in process_payment
+    cursor.execute('''
+sqlite3.OperationalError: table transactions has no column named request_log
+2025-04-01 14:39:26,660 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:39:26] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-01 14:39:26,682 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:39:26] "GET / HTTP/1.1" 200 -
+2025-04-01 14:41:32,822 - werkzeug - INFO -  * Detected change in 'c:\\Users\\hardi\\Desktop\\demopay\\app1.py', reloading
+2025-04-01 14:41:33,610 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-01 14:41:35,059 - __main__ - INFO - Added request_log column to transactions table
+2025-04-01 14:41:35,065 - __main__ - INFO - Added response_log column to transactions table
+2025-04-01 14:41:35,065 - __main__ - INFO - Database initialized and upgraded successfully!
+2025-04-01 14:41:35,116 - werkzeug - WARNING -  * Debugger is active!
+2025-04-01 14:41:35,127 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-04-01 14:41:56,386 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:41:56] "GET / HTTP/1.1" 200 -
+2025-04-01 14:42:17,730 - qr_payment - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-01 14:42:17,732 - qr_payment - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:42:17,732 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 14:42:17,732 - qr_payment - INFO - Generated order_id: e6dfa09ff66d
+2025-04-01 14:42:17,732 - qr_payment - INFO - Configured redirect URL: http://192.168.1.6:5000/payment-status?order_id=e6dfa09ff66d
+2025-04-01 14:42:17,763 - qr_payment - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-01 14:42:17,765 - qr_payment - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-01 14:42:17,769 - qr_payment - INFO - === QR REQUEST === Payload: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'e6dfa09ff66d', 'redirect_url': 'http://192.168.1.6:5000/payment-status?order_id=e6dfa09ff66d', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 14:42:19,115 - qr_payment - INFO - === QR RESPONSE === Status Code: 200
+2025-04-01 14:42:19,115 - qr_payment - INFO - === QR RESPONSE === Data: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'e6dfa09ff66d', 'payment_url': 'https://ekqr.live/payment9/instant-pay/db55acd6e1a3a3b8ddee27c0c2283f591f60887f5ebbad5ca947603756cabc5b', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCfMUrK1743498739&tid=ATCfMUrK1743498739&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN658174349873939&tid=ATCfMUrK1743498739'}}
+2025-04-01 14:42:19,134 - qr_payment - INFO - === QR GENERATION === Payment URL with QR: https://ekqr.live/payment9/instant-pay/db55acd6e1a3a3b8ddee27c0c2283f591f60887f5ebbad5ca947603756cabc5b
+2025-04-01 14:42:19,137 - qr_payment - INFO - === QR REDIRECT === Redirecting user to payment gateway URL
+2025-04-01 14:42:19,142 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:42:19] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-01 14:48:14,438 - __main__ - INFO - Payment status request received - Method: GET
+2025-04-01 14:48:14,439 - qr_payment - INFO - === QR CALLBACK === Request received - Method: GET
+2025-04-01 14:48:14,440 - qr_payment - INFO - === QR REDIRECT CALLBACK === Query parameters: {}
+2025-04-01 14:48:14,440 - qr_payment - INFO - === QR REDIRECT CALLBACK === Order ID: None
+2025-04-01 14:48:14,440 - qr_payment - ERROR - === QR REDIRECT ERROR === Missing order_id in redirect
+2025-04-01 14:48:14,447 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:48:14] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-04-01 14:48:14,469 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:48:14] "GET / HTTP/1.1" 200 -
+2025-04-01 14:51:02,148 - __main__ - INFO - Payment status request received - Method: GET
+2025-04-01 14:51:02,149 - qr_payment - INFO - === QR CALLBACK === Request received - Method: GET
+2025-04-01 14:51:02,150 - qr_payment - INFO - === QR REDIRECT CALLBACK === Query parameters: {'order_id': 'e6dfa09ff66d'}
+2025-04-01 14:51:02,154 - qr_payment - INFO - === QR REDIRECT CALLBACK === Order ID: e6dfa09ff66d
+2025-04-01 14:51:02,160 - qr_payment - INFO - === QR REDIRECT CALLBACK === Found transaction: {'id': 39, 'order_id': 'e6dfa09ff66d', 'status': 'pending', 'amount': '1', 'mobile': '8529402587', 'email': 'hardiksv95@gmail.com', 'utr': None, 'message': 'Payment initiated', 'timestamp': '2025-04-01 14:42:17.745901', 'request_log': '{"timestamp": "2025-04-01T14:42:17.745901", "url": "https://pay.imb.org.in/api/create-order", "method": "POST", "headers": {"Content-Type": "application/x-www-form-urlencoded"}, "payload": {"customer_mobile": "8529402587", "user_token": "5e491c82fc0f1aedddc986828462fc84", "amount": "1", "order_id": "e6dfa09ff66d", "redirect_url": "http://192.168.1.6:5000/payment-status?order_id=e6dfa09ff66d", "remark1": "hardiksv95@gmail.com", "remark2": "Payment via Flask app"}}', 'response_log': '{"timestamp": "2025-04-01T14:42:19.123452", "status_code": 200, "response_data": {"status": true, "message": "Order Created Successfully", "result": {"orderId": "e6dfa09ff66d", "payment_url": "https://ekqr.live/payment9/instant-pay/db55acd6e1a3a3b8ddee27c0c2283f591f60887f5ebbad5ca947603756cabc5b", "paytm_link": "paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCfMUrK1743498739&tid=ATCfMUrK1743498739&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer", "bhim_link": "upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN658174349873939&tid=ATCfMUrK1743498739"}}}'}
+2025-04-01 14:51:02,185 - qr_payment - INFO - === QR REDIRECT CALLBACK === Updated status to success
+2025-04-01 14:51:02,187 - qr_payment - INFO - === QR REDIRECT CALLBACK === Session updated with order data
+2025-04-01 14:51:02,191 - qr_payment - INFO - === QR REDIRECT CALLBACK === Redirecting to payment_success with order_id: e6dfa09ff66d
+2025-04-01 14:51:02,195 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:51:02] "[32mGET /payment-status?order_id=e6dfa09ff66d HTTP/1.1[0m" 302 -
+2025-04-01 14:51:02,227 - qr_payment - INFO - === QR PAYMENT COMPLETED === Success page loaded for order_id: e6dfa09ff66d
+2025-04-01 14:51:02,237 - qr_payment - INFO - === QR PAYMENT COMPLETED === Transaction details: {'id': 39, 'order_id': 'e6dfa09ff66d', 'status': 'success', 'amount': '1', 'mobile': '8529402587', 'email': 'hardiksv95@gmail.com', 'utr': None, 'message': 'Payment initiated', 'timestamp': '2025-04-01 14:42:17.745901', 'request_log': '{"timestamp": "2025-04-01T14:42:17.745901", "url": "https://pay.imb.org.in/api/create-order", "method": "POST", "headers": {"Content-Type": "application/x-www-form-urlencoded"}, "payload": {"customer_mobile": "8529402587", "user_token": "5e491c82fc0f1aedddc986828462fc84", "amount": "1", "order_id": "e6dfa09ff66d", "redirect_url": "http://192.168.1.6:5000/payment-status?order_id=e6dfa09ff66d", "remark1": "hardiksv95@gmail.com", "remark2": "Payment via Flask app"}}', 'response_log': '{"timestamp": "2025-04-01T14:51:02.160555", "method": "GET", "query_params": {"order_id": "e6dfa09ff66d"}, "headers": {"Host": "192.168.1.6:5000", "Connection": "keep-alive", "Upgrade-Insecure-Requests": "1", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0", "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", "Accept-Encoding": "gzip, deflate", "Accept-Language": "en-US,en;q=0.9", "Cookie": "session=eyJhbW91bnQiOiIxIiwiZW1haWwiOiJoYXJkaWtzdjk1QGdtYWlsLmNvbSIsIm1vYmlsZSI6Ijg1Mjk0MDI1ODciLCJvcmRlcl9pZCI6ImU2ZGZhMDlmZjY2ZCJ9.Z-uvVg.mIEyOs8R8K_iPQZG_mA7q4Gz9F0"}}'}
+2025-04-01 14:51:02,237 - qr_payment - INFO - === QR PAYMENT COMPLETED === Rendering success page with values: amount=1, status=success
+2025-04-01 14:51:02,272 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 14:51:02] "GET /payment-success?order_id=e6dfa09ff66d HTTP/1.1" 200 -
+2025-04-01 14:53:16,410 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\email\\__init__.py', reloading
+2025-04-01 14:53:17,515 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-01 14:53:18,693 - __main__ - INFO - Database initialized and upgraded successfully!
+2025-04-01 14:53:18,754 - werkzeug - WARNING -  * Debugger is active!
+2025-04-01 14:53:18,760 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-04-01 15:12:39,855 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\encodings\\hex_codec.py', reloading
+2025-04-01 15:12:40,975 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-01 15:12:42,075 - __main__ - INFO - Database initialized and upgraded successfully!
+2025-04-01 15:12:42,110 - werkzeug - WARNING -  * Debugger is active!
+2025-04-01 15:12:42,116 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-04-01 15:12:42,181 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site.py', reloading
+2025-04-01 15:12:42,212 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\os.py', reloading
+2025-04-01 15:12:42,239 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\stat.py', reloading
+2025-04-01 15:12:42,262 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\_collections_abc.py', reloading
+2025-04-01 15:12:42,301 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\ntpath.py', reloading
+2025-04-01 15:12:42,327 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\genericpath.py', reloading
+2025-04-01 15:12:42,348 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\_sitebuiltins.py', reloading
+2025-04-01 15:12:42,377 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\runpy.py', reloading
+2025-04-01 15:12:42,403 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\machinery.py', reloading
+2025-04-01 15:12:42,423 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\util.py', reloading
+2025-04-01 15:12:42,643 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\encodings\\latin_1.py', reloading
+2025-04-01 15:12:42,816 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\xmlrpc\\server.py', reloading
+2025-04-01 15:12:42,847 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hardi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\posixpath.py', reloading
+2025-04-01 15:12:43,274 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-01 15:12:44,187 - __main__ - INFO - Database initialized and upgraded successfully!
+2025-04-01 15:12:44,275 - werkzeug - WARNING -  * Debugger is active!
+2025-04-01 15:12:44,280 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-04-01 15:12:47,429 - __main__ - INFO - Database initialized and upgraded successfully!
+2025-04-01 15:12:47,677 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-01 15:12:47,678 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 15:12:47,690 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-01 15:12:49,288 - __main__ - INFO - Database initialized and upgraded successfully!
+2025-04-01 15:12:49,337 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-01 15:12:49,339 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 15:12:49,351 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-01 15:12:50,630 - __main__ - INFO - Database initialized and upgraded successfully!
+2025-04-01 15:12:50,673 - werkzeug - WARNING -  * Debugger is active!
+2025-04-01 15:12:50,679 - werkzeug - INFO -  * Debugger PIN: 105-628-557
+2025-04-01 15:12:51,579 - __main__ - INFO - Database initialized and upgraded successfully!
+2025-04-01 15:12:51,615 - werkzeug - WARNING -  * Debugger is active!
+2025-04-01 15:12:51,622 - werkzeug - INFO -  * Debugger PIN: 105-628-557
+2025-04-01 15:14:02,230 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 15:14:02] "GET / HTTP/1.1" 200 -
+2025-04-01 15:14:05,533 - qr_payment - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-01 15:14:05,534 - qr_payment - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 15:14:05,534 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 15:14:05,534 - qr_payment - INFO - Generated order_id: cdda521a986f
+2025-04-01 15:14:05,535 - qr_payment - INFO - Configured redirect URL: http://192.168.1.6:5000/payment-status?order_id=cdda521a986f
+2025-04-01 15:14:05,547 - qr_payment - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-01 15:14:05,547 - qr_payment - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-01 15:14:05,548 - qr_payment - INFO - === QR REQUEST === Payload: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'cdda521a986f', 'redirect_url': 'http://192.168.1.6:5000/payment-status?order_id=cdda521a986f', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 15:14:06,302 - qr_payment - INFO - === QR RESPONSE === Status Code: 200
+2025-04-01 15:14:06,305 - qr_payment - INFO - === QR RESPONSE === Data: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'cdda521a986f', 'payment_url': 'https://ekqr.live/payment9/instant-pay/322a19f2d04d9686a7a5b22f9c3dc6a0c5cfd91d89257fb38ad30a4505d8bf27', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCiVXHG1743500646&tid=ATCiVXHG1743500646&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN344174350064676&tid=ATCiVXHG1743500646'}}
+2025-04-01 15:14:06,313 - qr_payment - INFO - === QR GENERATION === Payment URL with QR: https://ekqr.live/payment9/instant-pay/322a19f2d04d9686a7a5b22f9c3dc6a0c5cfd91d89257fb38ad30a4505d8bf27
+2025-04-01 15:14:06,313 - qr_payment - INFO - === QR REDIRECT === Redirecting user to payment gateway URL
+2025-04-01 15:14:06,316 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 15:14:06] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-01 15:14:31,024 - __main__ - INFO - Payment status request received - Method: GET
+2025-04-01 15:14:31,024 - qr_payment - INFO - === QR CALLBACK === Request received - Method: GET
+2025-04-01 15:14:31,024 - qr_payment - INFO - === QR REDIRECT CALLBACK === Query parameters: {}
+2025-04-01 15:14:31,026 - qr_payment - INFO - === QR REDIRECT CALLBACK === Order ID: None
+2025-04-01 15:14:31,026 - qr_payment - ERROR - === QR REDIRECT ERROR === Missing order_id in redirect
+2025-04-01 15:14:31,028 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 15:14:31] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-04-01 15:14:31,041 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 15:14:31] "GET / HTTP/1.1" 200 -
+2025-04-01 15:15:48,186 - __main__ - INFO - Database initialized and upgraded successfully!
+2025-04-01 15:15:48,243 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-01 15:15:48,243 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 15:15:48,260 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-01 15:15:49,067 - __main__ - INFO - Database initialized and upgraded successfully!
+2025-04-01 15:15:49,089 - werkzeug - WARNING -  * Debugger is active!
+2025-04-01 15:15:49,089 - werkzeug - INFO -  * Debugger PIN: 328-891-948
+2025-04-01 15:16:06,376 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 15:16:06] "GET / HTTP/1.1" 200 -
+2025-04-01 15:16:11,615 - qr_payment - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-01 15:16:11,619 - qr_payment - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 15:16:11,621 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 15:16:11,621 - qr_payment - INFO - Generated order_id: fe46f3bc92c4
+2025-04-01 15:16:11,622 - qr_payment - INFO - Configured redirect URL: http://192.168.1.6:5000/payment-status?order_id=fe46f3bc92c4
+2025-04-01 15:16:11,636 - qr_payment - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-01 15:16:11,637 - qr_payment - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-01 15:16:11,637 - qr_payment - INFO - === QR REQUEST === Payload: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'fe46f3bc92c4', 'redirect_url': 'http://192.168.1.6:5000/payment-status?order_id=fe46f3bc92c4', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 15:16:12,334 - qr_payment - INFO - === QR RESPONSE === Status Code: 200
+2025-04-01 15:16:12,334 - qr_payment - INFO - === QR RESPONSE === Data: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'fe46f3bc92c4', 'payment_url': 'https://ekqr.live/payment9/instant-pay/7e71ea9750841a778cc94d783d530bfc4fbdd4d99773f11a2a64ca0160f76775', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCBDtUI1743500772&tid=ATCBDtUI1743500772&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN904174350077240&tid=ATCBDtUI1743500772'}}
+2025-04-01 15:16:12,347 - qr_payment - INFO - === QR GENERATION === Payment URL with QR: https://ekqr.live/payment9/instant-pay/7e71ea9750841a778cc94d783d530bfc4fbdd4d99773f11a2a64ca0160f76775
+2025-04-01 15:16:12,348 - qr_payment - INFO - === QR REDIRECT === Redirecting user to payment gateway URL
+2025-04-01 15:16:12,351 - werkzeug - INFO - 192.168.1.6 - - [01/Apr/2025 15:16:12] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-01 15:17:23,207 - __main__ - INFO - Payment status request received - Method: GET
+2025-04-01 15:17:23,208 - qr_payment - INFO - === QR CALLBACK === Request received - Method: GET
+2025-04-01 15:17:23,208 - qr_payment - INFO - === QR REDIRECT CALLBACK === Query parameters: {}
+2025-04-01 15:17:23,208 - qr_payment - INFO - === QR REDIRECT CALLBACK === Order ID: None
+2025-04-01 15:17:23,210 - qr_payment - ERROR - === QR REDIRECT ERROR === Missing order_id in redirect
+2025-04-01 15:17:23,212 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 15:17:23] "[32mGET /payment-status HTTP/1.1[0m" 302 -
+2025-04-01 15:17:23,231 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 15:17:23] "GET / HTTP/1.1" 200 -

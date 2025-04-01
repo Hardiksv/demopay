@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment History</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2563eb;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        th {
+            background-color: #f9fafb;
+            font-weight: 600;
+        }
+        tr:hover {
+            background-color: #f9fafb;
+        }
+        .status {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .success {
+            background-color: #dcfce7;
+            color: #16a34a;
+        }
+        .pending {
+            background-color: #fef3c7;
+            color: #d97706;
+        }
+        .failed {
+            background-color: #fee2e2;
+            color: #dc2626;
+        }
+        .unknown {
+            background-color: #f3f4f6;
+            color: #6b7280;
+        }
+        .empty {
+            text-align: center;
+            padding: 30px;
+            color: #6b7280;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #1d4ed8;
+        }
+        .btn-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Payment History</h1>
+        
+        {% if transactions %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Order ID</th>
+                        <th>Amount</th>
+                        <th>Mobile</th>
+                        <th>Status</th>
+                        <th>UTR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for tx in transactions %}
+                        <tr>
+                            <td>{{ tx.timestamp }}</td>
+                            <td>{{ tx.order_id }}</td>
+                            <td>₹{{ tx.amount }}</td>
+                            <td>{{ tx.mobile }}</td>
+                            <td>
+                                <span class="status {{ tx.status }}">
+                                    {{ tx.status|capitalize }}
+                                </span>
+                            </td>
+                            <td>{{ tx.utr if tx.utr else 'N/A' }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <div class="empty">
+                <p>No payment records found.</p>
+            </div>
+        {% endif %}
+        
+        <div class="btn-container">
+            <a href="/" class="btn">Make a Payment</a>
+        </div>
+    </div>
+</body>
+</html>

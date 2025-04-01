@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Success</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #16a34a;
+            margin-bottom: 20px;
+        }
+        .success-icon {
+            font-size: 64px;
+            color: #16a34a;
+            margin-bottom: 20px;
+        }
+        .details {
+            margin-top: 30px;
+            text-align: left;
+            padding: 20px;
+            background-color: #f0fdf4;
+            border-radius: 4px;
+        }
+        .details p {
+            margin: 8px 0;
+        }
+        .details strong {
+            display: inline-block;
+            width: 120px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+        .btn:hover {
+            background-color: #1d4ed8;
+        }
+        .info {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f3f4f6;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-icon">✓</div>
+        <h1>Payment Successful!</h1>
+        <p>Your payment has been processed successfully.</p>
+        
+        <div class="details">
+            <p><strong>Order ID:</strong> {{ order_id }}</p>
+            <p><strong>Amount:</strong> ₹{{ amount }}</p>
+            <p><strong>Mobile:</strong> {{ mobile }}</p>
+            <p><strong>Email:</strong> {{ email }}</p>
+            <p><strong>Date:</strong> {{ timestamp }}</p>
+        </div>
+        
+        <div class="info">
+            A confirmation has been sent to your email. Please keep this page for your reference.
+        </div>
+        
+        <div>
+            <a href="/" class="btn">Make Another Payment</a>
+            <a href="/history" class="btn">View Payment History</a>
+        </div>
+    </div>
+</body>
+</html>
