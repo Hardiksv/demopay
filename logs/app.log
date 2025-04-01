@@ -1161,3 +1161,28 @@ sqlite3.OperationalError: table transactions has no column named request_log
 2025-04-01 15:17:23,210 - qr_payment - ERROR - === QR REDIRECT ERROR === Missing order_id in redirect
 2025-04-01 15:17:23,212 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 15:17:23] "[32mGET /payment-status HTTP/1.1[0m" 302 -
 2025-04-01 15:17:23,231 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 15:17:23] "GET / HTTP/1.1" 200 -
+2025-04-01 20:27:42,805 - __main__ - INFO - Database initialized and upgraded successfully!
+2025-04-01 20:27:42,949 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.71:5000
+2025-04-01 20:27:42,949 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 20:27:42,991 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-01 20:27:44,044 - __main__ - INFO - Database initialized and upgraded successfully!
+2025-04-01 20:27:44,086 - werkzeug - WARNING -  * Debugger is active!
+2025-04-01 20:27:44,095 - werkzeug - INFO -  * Debugger PIN: 125-368-909
+2025-04-01 20:27:54,040 - werkzeug - INFO - 192.168.1.71 - - [01/Apr/2025 20:27:54] "GET / HTTP/1.1" 200 -
+2025-04-01 20:27:54,618 - werkzeug - INFO - 192.168.1.71 - - [01/Apr/2025 20:27:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-01 20:27:57,956 - qr_payment - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-01 20:27:57,959 - qr_payment - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 20:27:57,959 - __main__ - INFO - Processing payment: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 20:27:57,961 - qr_payment - INFO - Generated order_id: 2f2794f024f9
+2025-04-01 20:27:57,961 - qr_payment - INFO - Configured redirect URL: http://192.168.1.71:5000/payment-status?order_id=2f2794f024f9
+2025-04-01 20:27:57,973 - qr_payment - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-01 20:27:57,975 - qr_payment - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-01 20:27:57,975 - qr_payment - INFO - === QR REQUEST === Payload: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '2f2794f024f9', 'redirect_url': 'http://192.168.1.71:5000/payment-status?order_id=2f2794f024f9', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 20:27:59,165 - qr_payment - INFO - === QR RESPONSE === Status Code: 200
+2025-04-01 20:27:59,165 - qr_payment - INFO - === QR RESPONSE === Data: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '2f2794f024f9', 'payment_url': 'https://ekqr.live/payment9/instant-pay/e2ffde209b96037c19acdaac70f7eeb17dc2ca26f280c5a61f43b00e88d8ebf7', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCG1UIj1743519479&tid=ATCG1UIj1743519479&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN754174351947968&tid=ATCG1UIj1743519479'}}
+2025-04-01 20:27:59,182 - qr_payment - INFO - === QR GENERATION === Payment URL with QR: https://ekqr.live/payment9/instant-pay/e2ffde209b96037c19acdaac70f7eeb17dc2ca26f280c5a61f43b00e88d8ebf7
+2025-04-01 20:27:59,182 - qr_payment - INFO - === QR REDIRECT === Redirecting user to payment gateway URL
+2025-04-01 20:27:59,198 - werkzeug - INFO - 192.168.1.71 - - [01/Apr/2025 20:27:59] "[32mPOST /process-payment HTTP/1.1[0m" 302 -

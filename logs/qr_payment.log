@@ -80,3 +80,14 @@ sqlite3.OperationalError: table transactions has no column named request_log
 2025-04-01 15:17:23,208 - INFO - === QR REDIRECT CALLBACK === Query parameters: {}
 2025-04-01 15:17:23,208 - INFO - === QR REDIRECT CALLBACK === Order ID: None
 2025-04-01 15:17:23,210 - ERROR - === QR REDIRECT ERROR === Missing order_id in redirect
+2025-04-01 20:27:57,956 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-01 20:27:57,959 - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-01 20:27:57,961 - INFO - Generated order_id: 2f2794f024f9
+2025-04-01 20:27:57,961 - INFO - Configured redirect URL: http://192.168.1.71:5000/payment-status?order_id=2f2794f024f9
+2025-04-01 20:27:57,973 - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-01 20:27:57,975 - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-01 20:27:57,975 - INFO - === QR REQUEST === Payload: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '2f2794f024f9', 'redirect_url': 'http://192.168.1.71:5000/payment-status?order_id=2f2794f024f9', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-01 20:27:59,165 - INFO - === QR RESPONSE === Status Code: 200
+2025-04-01 20:27:59,165 - INFO - === QR RESPONSE === Data: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '2f2794f024f9', 'payment_url': 'https://ekqr.live/payment9/instant-pay/e2ffde209b96037c19acdaac70f7eeb17dc2ca26f280c5a61f43b00e88d8ebf7', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCG1UIj1743519479&tid=ATCG1UIj1743519479&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN754174351947968&tid=ATCG1UIj1743519479'}}
+2025-04-01 20:27:59,182 - INFO - === QR GENERATION === Payment URL with QR: https://ekqr.live/payment9/instant-pay/e2ffde209b96037c19acdaac70f7eeb17dc2ca26f280c5a61f43b00e88d8ebf7
+2025-04-01 20:27:59,182 - INFO - === QR REDIRECT === Redirecting user to payment gateway URL
