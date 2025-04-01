@@ -2,15 +2,29 @@
   "version": 2,
   "builds": [
     {
-      "src": "app1.py",
-      "use": "@vercel/python",
-      "config": { "pythonVersion": "3.10" }
+      "src": "api/*.py",
+      "use": "@vercel/python"
     }
   ],
+  "functions": {
+    "api/*.py": {
+      "runtime": "@vercel/python",
+      "maxDuration": 10, 
+      "memory": 128
+    }
+  },
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "app1.py"
+      "dest": "api/main.py"
     }
+  ],
+  "ignore": [
+    "venv/**",
+    "__pycache__/**",
+    "node_modules/**",
+    "tests/**",
+    "docs/**",
+    ".git/**"
   ]
 }
