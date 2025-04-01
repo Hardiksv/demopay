@@ -2,9 +2,7 @@
   "version": 2,
   "functions": {
     "api/*.py": {
-      "runtime": "@vercel/python",
-      "maxDuration": 10,
-      "memory": 128
+      "runtime": "vercel-python@3.9"
     }
   },
   "routes": [
