@@ -12,13 +12,5 @@
       "src": "/(.*)",
       "dest": "api/main.py"
     }
-  ],
-  "ignore": [
-    "venv/**",
-    "__pycache__/**",
-    "node_modules/**",
-    "tests/**",
-    "docs/**",
-    ".git/**"
   ]
 }
