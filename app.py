@@ -523,6 +523,42 @@ def server_error(e):
     logger.exception("Server error")
     return render_template('500.html'), 500
 
+
+@app.route('/payment-webhook', methods=['POST'])
+def payment_webhook():
+    """Handle payment provider webhook callback"""
+    try:
+        data = request.json  # Payment provider ka response data
+        qr_logger.info(f"=== WEBHOOK RECEIVED === Data: {data}")
+
+        order_id = data.get('result', {}).get('orderId')
+        payment_status = data.get('status')
+        message = data.get('message')
+
+        if not order_id:
+            qr_logger.error("=== WEBHOOK ERROR === Missing order_id in webhook")
+            return jsonify({"error": "Invalid request"}), 400
+
+        # Status Mapping (Provider ka format → Hamara format)
+        status = "success" if payment_status else "failed"
+
+        # Update database with new status
+        conn = sqlite3.connect('payments.db')
+        cursor = conn.cursor()
+        cursor.execute(
+            "UPDATE transactions SET status = ?, message = ? WHERE order_id = ?",
+            (status, message, order_id)
+        )
+        conn.commit()
+        conn.close()
+
+        qr_logger.info(f"=== WEBHOOK PROCESSED === Updated order {order_id} to {status}")
+        return jsonify({"message": "Webhook processed successfully"}), 200
+
+    except Exception as e:
+        qr_logger.exception(f"=== WEBHOOK ERROR === {str(e)}")
+        return jsonify({"error": "Internal server error"}), 500
+
 if __name__ == '__main__':
     # Create logs directory if it doesn't exist
     if not os.path.exists('logs'):
