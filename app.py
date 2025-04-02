@@ -525,51 +525,44 @@ def server_error(e):
 
 @app.route('/payment-webhook', methods=['POST'])
 def payment_webhook():
-    """Handle payment provider webhook callback"""
     try:
-        data = request.json  # Payment provider ka response data
+        data = request.json  
         qr_logger.info(f"=== WEBHOOK RECEIVED === Data: {data}")
 
-        # Extract order_id safely
         order_id = data.get('result', {}).get('orderId')
-        payment_status = str(data.get('status')).lower()  # Ensure it's a string
-        message = data.get('message', 'No message provided')
+        payment_status = data.get('status')
+        message = data.get('message')
 
         if not order_id:
             qr_logger.error("=== WEBHOOK ERROR === Missing order_id in webhook")
             return jsonify({"error": "Invalid request"}), 400
 
-        # Convert payment provider status to database status
-        if payment_status in ["true", "success", "completed"]:
-            status = "success"
-        else:
-            status = "failed"
+        status = "success" if payment_status else "failed"
 
-        # Database connection
-        conn = sqlite3.connect('payments.db')
+        # ✅ Fix: Proper SQLite Transaction Handling
+        conn = sqlite3.connect('payments.db', timeout=10)
         cursor = conn.cursor()
+        cursor.execute(
+            "UPDATE transactions SET status = ?, message = ? WHERE order_id = ?",
+            (status, message, order_id)
+        )
 
-        # Ensure order exists before updating
-        cursor.execute("SELECT order_id FROM transactions WHERE order_id = ?", (order_id,))
-        existing_order = cursor.fetchone()
-
-        if existing_order:
-            cursor.execute(
-                "UPDATE transactions SET status = ?, message = ? WHERE order_id = ?",
-                (status, message, order_id)
-            )
-            qr_logger.info(f"=== WEBHOOK PROCESSED === Order {order_id} updated to {status}")
-        else:
-            qr_logger.warning(f"=== WEBHOOK WARNING === Order {order_id} not found in DB")
+        if cursor.rowcount == 0:
+            qr_logger.error(f"=== WEBHOOK ERROR === Order ID {order_id} Not Found in DB")
+            conn.rollback()  # Revert changes if order_id not found
+            return jsonify({"error": "Order not found"}), 404
 
         conn.commit()
-        conn.close()
+        cursor.close()  
+        conn.close()    
 
+        qr_logger.info(f"=== WEBHOOK PROCESSED === Updated order {order_id} to {status}")
         return jsonify({"message": "Webhook processed successfully"}), 200
 
     except Exception as e:
         qr_logger.exception(f"=== WEBHOOK ERROR === {str(e)}")
         return jsonify({"error": "Internal server error"}), 500
+
 
 if __name__ == '__main__':
     # Create logs directory if it doesn't exist
