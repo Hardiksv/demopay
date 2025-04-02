@@ -231,7 +231,7 @@ def process_payment():
         qr_logger.exception(f"=== QR PROCESS ERROR === Unhandled exception: {str(e)}")
         flash("An error occurred during payment processing", "error")
         return redirect(url_for('home'))
-    
+
 @app.route('/payment-status', methods=['POST', 'GET'])
 def payment_status():
     """Handle payment status verification from IMB webhook and redirects"""
@@ -239,7 +239,6 @@ def payment_status():
     logger.info(f"Payment status request received - Method: {request.method}")
     qr_logger.info(f"=== QR CALLBACK === Request received - Method: {request.method}")
 
-    # Handle webhook POST requests
     if request.method == 'POST':
         qr_logger.info(f"=== QR WEBHOOK === Headers: {dict(request.headers)}")
         
@@ -248,17 +247,13 @@ def payment_status():
         qr_logger.info(f"=== QR WEBHOOK === Raw Data: {raw_data}")
         
         # Handle both JSON and form-urlencoded data
-        if request.is_json:
-            data = request.get_json()
-            qr_logger.info(f"=== QR WEBHOOK === JSON Data: {data}")
-        else:
-            data = request.form
-            qr_logger.info(f"=== QR WEBHOOK === Form Data: {dict(data)}")
+        data = request.get_json() if request.is_json else request.form
+        qr_logger.info(f"=== QR WEBHOOK === Parsed Data: {data}")
 
         order_id = data.get('order_id')
         utr = data.get('utr')
         status = data.get('status', 'unknown')
-
+        
         if not order_id:
             qr_logger.error("=== QR WEBHOOK ERROR === Missing order_id in webhook")
             return jsonify({"error": "Missing order_id"}), 400
@@ -273,7 +268,7 @@ def payment_status():
         try:
             conn = sqlite3.connect('payments.db')
             cursor = conn.cursor()
-
+            
             # Check if transaction exists
             cursor.execute('SELECT * FROM transactions WHERE order_id = ?', (order_id,))
             transaction = cursor.fetchone()
@@ -304,8 +299,6 @@ def payment_status():
 
             conn.commit()
             conn.close()
-
-            qr_logger.info(f"=== QR WEBHOOK SUCCESS === Transaction {order_id} updated to status: {status}")
             return jsonify({"success": True, "message": "Payment status updated"}), 200
 
         except Exception as e:
@@ -313,12 +306,11 @@ def payment_status():
             return jsonify({"error": str(e)}), 500
 
     # Handle redirect GET requests
-    else:  # GET request
+    else:
         qr_logger.info(f"=== QR REDIRECT CALLBACK === Query parameters: {dict(request.args)}")
         
-        # Get order_id from query params
         order_id = request.args.get('order_id')
-        qr_logger.info(f"=== QR REDIRECT CALLBACK === Order ID: {order_id}")
+        qr_logger.info(f"=== QR REDIRECT CALLBACK === Extracted Order ID: {order_id}")
 
         if not order_id:
             qr_logger.error("=== QR REDIRECT ERROR === Missing order_id in redirect")
@@ -334,58 +326,24 @@ def payment_status():
             cursor.execute('SELECT * FROM transactions WHERE order_id = ?', (order_id,))
             transaction = cursor.fetchone()
 
-            redirect_log = json.dumps({
-                'timestamp': datetime.datetime.now().isoformat(),
-                'method': 'GET',
-                'query_params': dict(request.args),
-                'headers': dict(request.headers)
-            })
+            if not transaction:
+                qr_logger.warning(f"=== QR REDIRECT CALLBACK === Order ID not found in database: {order_id}")
+                return "Order ID not found in database", 400
 
-            if transaction:
-                qr_logger.info(f"=== QR REDIRECT CALLBACK === Found transaction: {dict(transaction)}")
-                
-                # Update status to success if still pending
-                if transaction['status'] == 'pending':
-                    cursor.execute('''
-                    UPDATE transactions 
-                    SET status = ?, response_log = ?
-                    WHERE order_id = ?
-                    ''', ('success', redirect_log, order_id))
-                    conn.commit()
-                    qr_logger.info(f"=== QR REDIRECT CALLBACK === Updated status to success")
-                
-                # Explicitly set/update session variables
-                session['order_id'] = order_id
-                session['amount'] = transaction['amount']
-                session['mobile'] = transaction['mobile']
-                session['email'] = transaction['email']
-                session['payment_success'] = True
-                
-                qr_logger.info(f"=== QR REDIRECT CALLBACK === Session updated with order data")
-            else:
-                qr_logger.warning(f"=== QR REDIRECT CALLBACK === Transaction not found for order_id: {order_id}")
-                # Create minimal transaction record if somehow missing
-                cursor.execute('''
-                INSERT INTO transactions (order_id, status, timestamp, response_log)
-                VALUES (?, ?, ?, ?)
-                ''', (order_id, 'success', datetime.datetime.now(), redirect_log))
-                conn.commit()
-                
-                # Set minimal session data
-                session['order_id'] = order_id
-                session['payment_success'] = True
-                qr_logger.info(f"=== QR REDIRECT CALLBACK === Created new transaction from redirect")
+            # Update session with transaction details
+            session['order_id'] = order_id
+            session['amount'] = transaction['amount']
+            session['mobile'] = transaction['mobile']
+            session['email'] = transaction['email']
+            session['payment_success'] = (transaction['status'] == 'success')
 
             conn.close()
-
+        
         except Exception as e:
             qr_logger.exception(f"=== QR REDIRECT ERROR === Database error: {str(e)}")
-            # Even if error occurs, set minimal session data for redirect
             session['order_id'] = order_id
-            session['payment_success'] = True
+            session['payment_success'] = False
 
-        # Use URL with query parameter to maintain data through redirect
-        qr_logger.info(f"=== QR REDIRECT CALLBACK === Redirecting to payment_success with order_id: {order_id}")
         return redirect(url_for('payment_success', order_id=order_id))
 
 
