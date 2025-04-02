@@ -91,3 +91,234 @@ sqlite3.OperationalError: table transactions has no column named request_log
 2025-04-01 20:27:59,165 - INFO - === QR RESPONSE === Data: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '2f2794f024f9', 'payment_url': 'https://ekqr.live/payment9/instant-pay/e2ffde209b96037c19acdaac70f7eeb17dc2ca26f280c5a61f43b00e88d8ebf7', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom International&am=1&cu=INR&tn=ATCG1UIj1743519479&tid=ATCG1UIj1743519479&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom International&tn=TXN754174351947968&tid=ATCG1UIj1743519479'}}
 2025-04-01 20:27:59,182 - INFO - === QR GENERATION === Payment URL with QR: https://ekqr.live/payment9/instant-pay/e2ffde209b96037c19acdaac70f7eeb17dc2ca26f280c5a61f43b00e88d8ebf7
 2025-04-01 20:27:59,182 - INFO - === QR REDIRECT === Redirecting user to payment gateway URL
+2025-04-02 11:57:07,757 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-02 11:57:07,758 - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-02 11:57:07,758 - INFO - Generated order_id: e3b4fc3f28e5
+2025-04-02 11:57:07,760 - INFO - Configured redirect URL: http://127.0.0.1:5000/payment-status?order_id=e3b4fc3f28e5
+2025-04-02 11:57:07,771 - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-02 11:57:07,772 - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-02 11:57:07,773 - INFO - === QR REQUEST === Payload: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'e3b4fc3f28e5', 'redirect_url': 'http://127.0.0.1:5000/payment-status?order_id=e3b4fc3f28e5', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-02 11:57:08,481 - INFO - === QR RESPONSE === Status Code: 400
+2025-04-02 11:57:08,483 - ERROR - === QR RESPONSE ERROR === Failed with status code: 400
+2025-04-02 11:57:08,483 - ERROR - Response content: {"status":false,"message":"Your Plan Expired Please Renew"}
+2025-04-02 11:57:15,440 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-02 11:57:15,443 - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-02 11:57:15,446 - INFO - Generated order_id: c8643b66c54e
+2025-04-02 11:57:15,446 - INFO - Configured redirect URL: http://127.0.0.1:5000/payment-status?order_id=c8643b66c54e
+2025-04-02 11:57:15,449 - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-02 11:57:15,454 - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-02 11:57:15,454 - INFO - === QR REQUEST === Payload: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'c8643b66c54e', 'redirect_url': 'http://127.0.0.1:5000/payment-status?order_id=c8643b66c54e', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-02 11:57:16,111 - INFO - === QR RESPONSE === Status Code: 400
+2025-04-02 11:57:16,113 - ERROR - === QR RESPONSE ERROR === Failed with status code: 400
+2025-04-02 11:57:16,113 - ERROR - Response content: {"status":false,"message":"Your Plan Expired Please Renew"}
+2025-04-02 11:57:26,973 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-02 11:57:26,975 - INFO - Payment form submitted: Amount=1, Mobile=9680457365, Email=hardiksv95@gmail.com
+2025-04-02 11:57:26,975 - INFO - Generated order_id: f28e06cdb4a6
+2025-04-02 11:57:26,975 - INFO - Configured redirect URL: http://127.0.0.1:5000/payment-status?order_id=f28e06cdb4a6
+2025-04-02 11:57:26,985 - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-02 11:57:26,985 - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-02 11:57:26,989 - INFO - === QR REQUEST === Payload: {'customer_mobile': '9680457365', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'f28e06cdb4a6', 'redirect_url': 'http://127.0.0.1:5000/payment-status?order_id=f28e06cdb4a6', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-02 11:57:27,655 - INFO - === QR RESPONSE === Status Code: 400
+2025-04-02 11:57:27,658 - ERROR - === QR RESPONSE ERROR === Failed with status code: 400
+2025-04-02 11:57:27,658 - ERROR - Response content: {"status":false,"message":"Your Plan Expired Please Renew"}
+2025-04-02 11:57:55,414 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-02 11:57:55,418 - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-02 11:57:55,419 - INFO - Generated order_id: ab83da8a46ca
+2025-04-02 11:57:55,419 - INFO - Configured redirect URL: http://192.168.1.6:5000/payment-status?order_id=ab83da8a46ca
+2025-04-02 11:57:55,426 - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-02 11:57:55,428 - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-02 11:57:55,430 - INFO - === QR REQUEST === Payload: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'ab83da8a46ca', 'redirect_url': 'http://192.168.1.6:5000/payment-status?order_id=ab83da8a46ca', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-02 11:57:56,073 - INFO - === QR RESPONSE === Status Code: 400
+2025-04-02 11:57:56,073 - ERROR - === QR RESPONSE ERROR === Failed with status code: 400
+2025-04-02 11:57:56,073 - ERROR - Response content: {"status":false,"message":"Your Plan Expired Please Renew"}
+2025-04-02 11:58:09,751 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-02 11:58:09,752 - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-02 11:58:09,752 - INFO - Generated order_id: cdf46ed55996
+2025-04-02 11:58:09,754 - INFO - Configured redirect URL: http://192.168.1.6:5000/payment-status?order_id=cdf46ed55996
+2025-04-02 11:58:09,766 - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-02 11:58:09,767 - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-02 11:58:09,767 - INFO - === QR REQUEST === Payload: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'cdf46ed55996', 'redirect_url': 'http://192.168.1.6:5000/payment-status?order_id=cdf46ed55996', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-02 11:58:10,414 - INFO - === QR RESPONSE === Status Code: 400
+2025-04-02 11:58:10,414 - ERROR - === QR RESPONSE ERROR === Failed with status code: 400
+2025-04-02 11:58:10,414 - ERROR - Response content: {"status":false,"message":"Your Plan Expired Please Renew"}
+2025-04-02 11:58:31,909 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-02 11:58:31,911 - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-02 11:58:31,912 - INFO - Generated order_id: 5974596bf0a6
+2025-04-02 11:58:31,912 - INFO - Configured redirect URL: http://192.168.1.6:5000/payment-status?order_id=5974596bf0a6
+2025-04-02 11:58:31,919 - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-02 11:58:31,919 - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-02 11:58:31,919 - INFO - === QR REQUEST === Payload: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '5974596bf0a6', 'redirect_url': 'http://192.168.1.6:5000/payment-status?order_id=5974596bf0a6', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-02 11:58:32,579 - INFO - === QR RESPONSE === Status Code: 400
+2025-04-02 11:58:32,579 - ERROR - === QR RESPONSE ERROR === Failed with status code: 400
+2025-04-02 11:58:32,579 - ERROR - Response content: {"status":false,"message":"Your Plan Expired Please Renew"}
+2025-04-02 12:03:12,746 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-02 12:03:12,751 - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-02 12:03:12,751 - INFO - Generated order_id: 01d4b686c581
+2025-04-02 12:03:12,751 - INFO - Configured redirect URL: http://192.168.1.6:5000/payment-status?order_id=01d4b686c581
+2025-04-02 12:03:12,765 - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-02 12:03:12,766 - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-02 12:03:12,766 - INFO - === QR REQUEST === Payload: {'customer_mobile': '8529402587', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '01d4b686c581', 'redirect_url': 'http://192.168.1.6:5000/payment-status?order_id=01d4b686c581', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-02 12:03:13,532 - INFO - === QR RESPONSE === Status Code: 400
+2025-04-02 12:03:13,532 - ERROR - === QR RESPONSE ERROR === Failed with status code: 400
+2025-04-02 12:03:13,545 - ERROR - Response content: {"status":false,"message":"Your Plan Expired Please Renew"}
+2025-04-02 12:15:29,758 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-02 12:15:29,759 - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-02 12:15:29,760 - INFO - Generated order_id: 27c9687e8894
+2025-04-02 12:15:29,760 - INFO - Configured redirect URL: http://192.168.1.6:5000/payment-status?order_id=27c9687e8894
+2025-04-02 12:15:29,769 - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-02 12:15:29,769 - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-02 12:15:29,770 - INFO - === QR REQUEST === Payload: {'customer_mobile': '8529402587', 'user_token': 'd4c92f5024a853fb0e598c1dd2f01528', 'amount': '1', 'order_id': '27c9687e8894', 'redirect_url': 'http://192.168.1.6:5000/payment-status?order_id=27c9687e8894', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-02 12:15:30,784 - INFO - === QR RESPONSE === Status Code: 200
+2025-04-02 12:15:30,785 - INFO - === QR RESPONSE === Data: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '27c9687e8894', 'payment_url': 'https://ekqr.live/payment9/instant-pay/e72eb7bcbbc2ebfeefc5d92e4b8501d6416d8195837d4cb3798cf31b62612a90', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom&am=1&cu=INR&tn=ATCFrLhm1743576332&tid=ATCFrLhm1743576332&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom&tn=TXN766174357633279&tid=ATCFrLhm1743576332'}}
+2025-04-02 12:15:30,807 - INFO - === QR GENERATION === Payment URL with QR: https://ekqr.live/payment9/instant-pay/e72eb7bcbbc2ebfeefc5d92e4b8501d6416d8195837d4cb3798cf31b62612a90
+2025-04-02 12:15:30,808 - INFO - === QR REDIRECT === Redirecting user to payment gateway URL
+2025-04-02 12:23:40,513 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-02 12:23:40,513 - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-02 12:23:40,513 - INFO - Generated order_id: fb867a066f67
+2025-04-02 12:23:40,513 - INFO - Configured redirect URL: http://192.168.1.6:5000/payment-status?order_id=fb867a066f67
+2025-04-02 12:23:40,539 - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-02 12:23:40,540 - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-02 12:23:40,540 - INFO - === QR REQUEST === Payload: {'customer_mobile': '8529402587', 'user_token': 'd4c92f5024a853fb0e598c1dd2f01528', 'amount': '1', 'order_id': 'fb867a066f67', 'redirect_url': 'https://demopay-2.onrender.com/payment-status', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-02 12:23:41,912 - INFO - === QR RESPONSE === Status Code: 200
+2025-04-02 12:23:41,912 - INFO - === QR RESPONSE === Data: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'fb867a066f67', 'payment_url': 'https://ekqr.live/payment9/instant-pay/1a13dda1f2409a5996bfc318f233f767873752accd4557606940ebc4262ae791', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom&am=1&cu=INR&tn=ATCIPy4L1743576823&tid=ATCIPy4L1743576823&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom&tn=TXN479174357682365&tid=ATCIPy4L1743576823'}}
+2025-04-02 12:23:41,924 - INFO - === QR GENERATION === Payment URL with QR: https://ekqr.live/payment9/instant-pay/1a13dda1f2409a5996bfc318f233f767873752accd4557606940ebc4262ae791
+2025-04-02 12:23:41,926 - INFO - === QR REDIRECT === Redirecting user to payment gateway URL
+2025-04-02 12:40:20,920 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-02 12:40:20,920 - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-02 12:40:20,920 - INFO - Generated order_id: 1efe72d85ff5
+2025-04-02 12:40:20,920 - INFO - Configured redirect URL: http://192.168.1.6:5000/payment-status?order_id=1efe72d85ff5
+2025-04-02 12:40:20,920 - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-02 12:40:20,931 - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-02 12:40:20,931 - INFO - === QR REQUEST === Payload: {'customer_mobile': '8529402587', 'user_token': 'd4c92f5024a853fb0e598c1dd2f01528', 'amount': '1', 'order_id': '1efe72d85ff5', 'redirect_url': 'http://192.168.1.6:5000/payment-status?order_id=1efe72d85ff5', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-02 12:40:21,803 - INFO - === QR RESPONSE === Status Code: 200
+2025-04-02 12:40:21,804 - INFO - === QR RESPONSE === Data: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '1efe72d85ff5', 'payment_url': 'https://ekqr.live/payment9/instant-pay/7334a932ecfdaca7db8c3c3744e91e21d182c965be22f9d2847f080cb96b07fb', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom&am=1&cu=INR&tn=ATCNSxJl1743577823&tid=ATCNSxJl1743577823&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom&tn=TXN824174357782319&tid=ATCNSxJl1743577823'}}
+2025-04-02 12:40:21,812 - INFO - === QR GENERATION === Payment URL with QR: https://ekqr.live/payment9/instant-pay/7334a932ecfdaca7db8c3c3744e91e21d182c965be22f9d2847f080cb96b07fb
+2025-04-02 12:40:21,813 - INFO - === QR REDIRECT === Redirecting user to payment gateway URL
+2025-04-02 12:41:18,667 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-02 12:41:18,669 - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-02 12:41:18,670 - INFO - Generated order_id: d51107b8fbae
+2025-04-02 12:41:18,670 - INFO - Configured redirect URL: http://192.168.1.6:5000/payment-status?order_id=d51107b8fbae
+2025-04-02 12:41:18,695 - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-02 12:41:18,697 - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-02 12:41:18,697 - INFO - === QR REQUEST === Payload: {'customer_mobile': '8529402587', 'user_token': 'd4c92f5024a853fb0e598c1dd2f01528', 'amount': '1', 'order_id': 'd51107b8fbae', 'redirect_url': 'http://192.168.1.6:5000/payment-status?order_id=d51107b8fbae', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-02 12:41:19,369 - INFO - === QR RESPONSE === Status Code: 200
+2025-04-02 12:41:19,369 - INFO - === QR RESPONSE === Data: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'd51107b8fbae', 'payment_url': 'https://ekqr.live/payment9/instant-pay/804d0dfdf363e6e8ac0416ddc2f98f613d62a668ac9049657287ffdc5c722d50', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom&am=1&cu=INR&tn=ATCxRtdz1743577880&tid=ATCxRtdz1743577880&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom&tn=TXN648174357788068&tid=ATCxRtdz1743577880'}}
+2025-04-02 12:41:19,390 - INFO - === QR GENERATION === Payment URL with QR: https://ekqr.live/payment9/instant-pay/804d0dfdf363e6e8ac0416ddc2f98f613d62a668ac9049657287ffdc5c722d50
+2025-04-02 12:41:19,391 - INFO - === QR REDIRECT === Redirecting user to payment gateway URL
+2025-04-02 12:45:19,215 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-02 12:45:19,217 - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-02 12:45:19,217 - INFO - Generated order_id: 0ad370b6210b
+2025-04-02 12:45:19,218 - INFO - Configured redirect URL: https://demopay-2.onrender.com/payment-status?order_id=0ad370b6210b
+2025-04-02 12:45:19,224 - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-02 12:45:19,225 - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-02 12:45:19,226 - INFO - === QR REQUEST === Payload: {'customer_mobile': '8529402587', 'user_token': 'd4c92f5024a853fb0e598c1dd2f01528', 'amount': '1', 'order_id': '0ad370b6210b', 'redirect_url': 'https://demopay-2.onrender.com/payment-status?order_id=0ad370b6210b', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-02 12:45:19,941 - INFO - === QR RESPONSE === Status Code: 200
+2025-04-02 12:45:19,941 - INFO - === QR RESPONSE === Data: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '0ad370b6210b', 'payment_url': 'https://ekqr.live/payment9/instant-pay/715bc79fbdc14dcaaeee88ccafda13cfbfd5990c9d7a63c37a2afe5870902d7b', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom&am=1&cu=INR&tn=ATChe2401743578121&tid=ATChe2401743578121&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom&tn=TXN251174357812134&tid=ATChe2401743578121'}}
+2025-04-02 12:45:19,964 - INFO - === QR GENERATION === Payment URL with QR: https://ekqr.live/payment9/instant-pay/715bc79fbdc14dcaaeee88ccafda13cfbfd5990c9d7a63c37a2afe5870902d7b
+2025-04-02 12:45:19,964 - INFO - === QR REDIRECT === Redirecting user to payment gateway URL
+2025-04-02 12:46:44,853 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-02 12:46:44,853 - INFO - Payment form submitted: Amount=1, Mobile=8529402587, Email=hardiksv95@gmail.com
+2025-04-02 12:46:44,853 - INFO - Generated order_id: 6fc289f7f6e9
+2025-04-02 12:46:44,853 - INFO - Configured redirect URL: https://demopay-2.onrender.com/payment-status
+2025-04-02 12:46:44,866 - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-02 12:46:44,866 - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-02 12:46:44,867 - INFO - === QR REQUEST === Payload: {'customer_mobile': '8529402587', 'user_token': 'd4c92f5024a853fb0e598c1dd2f01528', 'amount': '1', 'order_id': '6fc289f7f6e9', 'redirect_url': 'https://demopay-2.onrender.com/payment-status', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-02 12:46:45,570 - INFO - === QR RESPONSE === Status Code: 200
+2025-04-02 12:46:45,571 - INFO - === QR RESPONSE === Data: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '6fc289f7f6e9', 'payment_url': 'https://ekqr.live/payment9/instant-pay/6b594af9f2bf2c0919bad1365d30cdc728dda4be58aa12c0447e67eb58d49831', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom&am=1&cu=INR&tn=ATCIDjQS1743578206&tid=ATCIDjQS1743578206&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom&tn=TXN77917435782065&tid=ATCIDjQS1743578206'}}
+2025-04-02 12:46:45,578 - INFO - === QR GENERATION === Payment URL with QR: https://ekqr.live/payment9/instant-pay/6b594af9f2bf2c0919bad1365d30cdc728dda4be58aa12c0447e67eb58d49831
+2025-04-02 12:46:45,578 - INFO - === QR REDIRECT === Redirecting user to payment gateway URL
+2025-04-02 12:56:04,984 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-02 12:56:04,984 - INFO - Payment form submitted: Amount=1, Mobile=9680457365, Email=hardiksv95@gmail.com
+2025-04-02 12:56:04,984 - INFO - Generated order_id: 19eeca52895c
+2025-04-02 12:56:04,984 - INFO - Configured redirect URL: https://demopay-2.onrender.com/payment-status?order_id=19eeca52895c
+2025-04-02 12:56:05,004 - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-02 12:56:05,006 - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-02 12:56:05,007 - INFO - === QR REQUEST === Payload: {'customer_mobile': '9680457365', 'user_token': 'd4c92f5024a853fb0e598c1dd2f01528', 'amount': '1', 'order_id': '19eeca52895c', 'redirect_url': 'https://demopay-2.onrender.com/payment-status?order_id=19eeca52895c', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-02 12:56:05,762 - INFO - === QR RESPONSE === Status Code: 200
+2025-04-02 12:56:05,763 - INFO - === QR RESPONSE === Data: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '19eeca52895c', 'payment_url': 'https://ekqr.live/payment9/instant-pay/2a3ab155b95910dc312e17649de0b5d34ec1be1a97b7bbb637cdeba286201920', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom&am=1&cu=INR&tn=ATCFhyWM1743578767&tid=ATCFhyWM1743578767&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom&tn=TXN733174357876750&tid=ATCFhyWM1743578767'}}
+2025-04-02 12:56:05,773 - INFO - === QR GENERATION === Payment URL with QR: https://ekqr.live/payment9/instant-pay/2a3ab155b95910dc312e17649de0b5d34ec1be1a97b7bbb637cdeba286201920
+2025-04-02 12:56:05,773 - INFO - === QR REDIRECT === Redirecting user to payment gateway URL
+2025-04-02 13:06:34,883 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-02 13:06:34,887 - INFO - Payment form submitted: Amount=1, Mobile=9680457365, Email=hardiksv95@gmail.com
+2025-04-02 13:06:34,887 - INFO - Generated order_id: ff9400910eca
+2025-04-02 13:06:34,887 - INFO - Redirect URL: https://demopay-2.onrender.com/payment-success?order_id=ff9400910eca
+2025-04-02 13:06:34,890 - INFO - Configured redirect URL: https://demopay-2.onrender.com/payment-success?order_id=ff9400910eca
+2025-04-02 13:06:34,908 - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-02 13:06:34,909 - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-02 13:06:34,910 - INFO - === QR REQUEST === Payload: {'customer_mobile': '9680457365', 'user_token': 'd4c92f5024a853fb0e598c1dd2f01528', 'amount': '1', 'order_id': 'ff9400910eca', 'redirect_url': 'https://demopay-2.onrender.com/payment-success?order_id=ff9400910eca', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-02 13:06:35,677 - INFO - === QR RESPONSE === Status Code: 200
+2025-04-02 13:06:35,682 - INFO - === QR RESPONSE === Data: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'ff9400910eca', 'payment_url': 'https://ekqr.live/payment9/instant-pay/8a239102aad5f2c713876757b5a71915e0fbb3e6ff0b88a739f1008bc51f0f97', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom&am=1&cu=INR&tn=ATCfIblR1743579396&tid=ATCfIblR1743579396&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom&tn=TXN580174357939632&tid=ATCfIblR1743579396'}}
+2025-04-02 13:06:35,683 - INFO - === QR GENERATION === Payment URL with QR: https://ekqr.live/payment9/instant-pay/8a239102aad5f2c713876757b5a71915e0fbb3e6ff0b88a739f1008bc51f0f97
+2025-04-02 13:06:35,692 - INFO - === QR REDIRECT === Redirecting user to payment gateway URL
+2025-04-02 14:33:05,373 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-02 14:33:05,373 - INFO - Payment form submitted: Amount=1, Mobile=9680457365, Email=hardiksv95@gmail.com
+2025-04-02 14:33:05,373 - INFO - Generated order_id: e7b45126f7fd
+2025-04-02 14:33:05,373 - INFO - Redirect URL: https://demopay-2.onrender.com/payment-success?order_id=e7b45126f7fd
+2025-04-02 14:33:05,373 - INFO - Configured redirect URL: https://demopay-2.onrender.com/payment-success?order_id=e7b45126f7fd
+2025-04-02 14:33:05,393 - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-02 14:33:05,395 - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-02 14:33:05,409 - INFO - === QR REQUEST === Payload: {'customer_mobile': '9680457365', 'user_token': 'd4c92f5024a853fb0e598c1dd2f01528', 'amount': '1', 'order_id': 'e7b45126f7fd', 'redirect_url': 'https://demopay-2.onrender.com/payment-success?order_id=e7b45126f7fd', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-02 14:33:06,727 - INFO - === QR RESPONSE === Status Code: 200
+2025-04-02 14:33:06,729 - INFO - === QR RESPONSE === Data: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'e7b45126f7fd', 'payment_url': 'https://ekqr.live/payment9/instant-pay/ee6537a91a9a0e6a37dad00ae2ac2a0b1fcc0ecaea54f6fe20905a58005719c1', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom&am=1&cu=INR&tn=ATCm3Si61743584587&tid=ATCm3Si61743584587&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom&tn=TXN318174358458790&tid=ATCm3Si61743584587'}}
+2025-04-02 14:33:06,752 - INFO - === QR GENERATION === Payment URL with QR: https://ekqr.live/payment9/instant-pay/ee6537a91a9a0e6a37dad00ae2ac2a0b1fcc0ecaea54f6fe20905a58005719c1
+2025-04-02 14:33:06,753 - INFO - === QR REDIRECT === Redirecting user to payment gateway URL
+2025-04-02 15:11:34,894 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-02 15:11:34,895 - INFO - Payment form submitted: Amount=1, Mobile=9680457365, Email=hardiksv95@gmail.com
+2025-04-02 15:11:34,897 - INFO - Generated order_id: 5eb65e9a965a
+2025-04-02 15:11:34,897 - INFO - Redirect URL: https://demopay-2.onrender.com/payment-success?order_id=5eb65e9a965a
+2025-04-02 15:11:34,898 - INFO - Configured redirect URL: https://demopay-2.onrender.com/payment-success?order_id=5eb65e9a965a
+2025-04-02 15:11:34,915 - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-02 15:11:34,918 - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-02 15:11:34,919 - INFO - === QR REQUEST === Payload: {'customer_mobile': '9680457365', 'user_token': 'd4c92f5024a853fb0e598c1dd2f01528', 'amount': '1', 'order_id': '5eb65e9a965a', 'redirect_url': 'https://demopay-2.onrender.com/payment-success?order_id=5eb65e9a965a', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-02 15:11:35,936 - INFO - === QR RESPONSE === Status Code: 200
+2025-04-02 15:11:35,936 - INFO - === QR RESPONSE === Data: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '5eb65e9a965a', 'payment_url': 'https://ekqr.live/payment9/instant-pay/01442013145aae2f7e8bf7ead1996392b9c9e2e56494e9cb7e50015f0f9b2580', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom&am=1&cu=INR&tn=ATCuUzse1743586897&tid=ATCuUzse1743586897&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom&tn=TXN489174358689769&tid=ATCuUzse1743586897'}}
+2025-04-02 15:11:35,947 - INFO - === QR GENERATION === Payment URL with QR: https://ekqr.live/payment9/instant-pay/01442013145aae2f7e8bf7ead1996392b9c9e2e56494e9cb7e50015f0f9b2580
+2025-04-02 15:11:35,948 - INFO - === QR REDIRECT === Redirecting user to payment gateway URL
+2025-04-02 15:13:55,363 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-02 15:13:55,365 - INFO - Payment form submitted: Amount=1, Mobile=9680457365, Email=hardiksv95@gmail.com
+2025-04-02 15:13:55,366 - INFO - Generated order_id: a4dc21bb639a
+2025-04-02 15:13:55,366 - INFO - Redirect URL: https://demopay-2.onrender.com/payment-success?order_id=a4dc21bb639a
+2025-04-02 15:13:55,366 - INFO - Configured redirect URL: https://demopay-2.onrender.com/payment-success?order_id=a4dc21bb639a
+2025-04-02 15:13:55,374 - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-02 15:13:55,376 - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-02 15:13:55,377 - INFO - === QR REQUEST === Payload: {'customer_mobile': '9680457365', 'user_token': 'd4c92f5024a853fb0e598c1dd2f01528', 'amount': '1', 'order_id': 'a4dc21bb639a', 'redirect_url': 'https://demopay-2.onrender.com/payment-success?order_id=a4dc21bb639a', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-02 15:13:56,305 - INFO - === QR RESPONSE === Status Code: 200
+2025-04-02 15:13:56,307 - INFO - === QR RESPONSE === Data: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'a4dc21bb639a', 'payment_url': 'https://ekqr.live/payment9/instant-pay/77cc10170c195b62239807d12f9d01cddadbf642fce3bd838dd37244e13ec668', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom&am=1&cu=INR&tn=ATCnXas11743587037&tid=ATCnXas11743587037&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom&tn=TXN641174358703724&tid=ATCnXas11743587037'}}
+2025-04-02 15:13:56,316 - INFO - === QR GENERATION === Payment URL with QR: https://ekqr.live/payment9/instant-pay/77cc10170c195b62239807d12f9d01cddadbf642fce3bd838dd37244e13ec668
+2025-04-02 15:13:56,316 - INFO - === QR REDIRECT === Redirecting user to payment gateway URL
+2025-04-02 15:20:55,637 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-02 15:20:55,639 - INFO - Payment form submitted: Amount=1, Mobile=9680457365, Email=hardiksv95@gmail.com
+2025-04-02 15:20:55,639 - INFO - Generated order_id: 08d78a4c5aaa
+2025-04-02 15:20:55,639 - INFO - Redirect URL: https://demopay-2.onrender.com/payment-success?order_id=08d78a4c5aaa
+2025-04-02 15:20:55,639 - INFO - Configured redirect URL: https://demopay-2.onrender.com/payment-success?order_id=08d78a4c5aaa
+2025-04-02 15:20:55,651 - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-02 15:20:55,652 - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-02 15:20:55,652 - INFO - === QR REQUEST === Payload: {'customer_mobile': '9680457365', 'user_token': 'd4c92f5024a853fb0e598c1dd2f01528', 'amount': '1', 'order_id': '08d78a4c5aaa', 'redirect_url': 'https://demopay-2.onrender.com/payment-success?order_id=08d78a4c5aaa', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-02 15:20:56,401 - INFO - === QR RESPONSE === Status Code: 200
+2025-04-02 15:20:56,402 - INFO - === QR RESPONSE === Data: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '08d78a4c5aaa', 'payment_url': 'https://ekqr.live/payment9/instant-pay/b7f3a3966009e329a71d7d0c56da5558dea5d61dede0eac78af0bd367e917453', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom&am=1&cu=INR&tn=ATCLXvlQ1743587457&tid=ATCLXvlQ1743587457&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom&tn=TXN405174358745761&tid=ATCLXvlQ1743587457'}}
+2025-04-02 15:20:56,416 - INFO - === QR GENERATION === Payment URL with QR: https://ekqr.live/payment9/instant-pay/b7f3a3966009e329a71d7d0c56da5558dea5d61dede0eac78af0bd367e917453
+2025-04-02 15:20:56,417 - INFO - === QR REDIRECT === Redirecting user to payment gateway URL
+2025-04-02 15:42:40,322 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-02 15:42:40,322 - INFO - Payment form submitted: Amount=1, Mobile=9680457365, Email=hardiksv95@gmail.com
+2025-04-02 15:42:40,322 - INFO - Generated order_id: 469007bf8985
+2025-04-02 15:42:40,322 - INFO - Redirect URL: https://demopay-2.onrender.com/payment-success?order_id=469007bf8985
+2025-04-02 15:42:40,322 - INFO - Configured redirect URL: https://demopay-2.onrender.com/payment-success?order_id=469007bf8985
+2025-04-02 15:42:40,340 - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-02 15:42:40,340 - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-02 15:42:40,340 - INFO - === QR REQUEST === Payload: {'customer_mobile': '9680457365', 'user_token': 'd4c92f5024a853fb0e598c1dd2f01528', 'amount': '1', 'order_id': '469007bf8985', 'redirect_url': 'https://demopay-2.onrender.com/payment-success?order_id=469007bf8985', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-02 15:42:41,290 - INFO - === QR RESPONSE === Status Code: 200
+2025-04-02 15:42:41,290 - INFO - === QR RESPONSE === Data: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '469007bf8985', 'payment_url': 'https://ekqr.live/payment9/instant-pay/4e1fb51f461e473552df002bc97191961bf7bbaabf97a09dd0cf0ed4d79bb90b', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom&am=1&cu=INR&tn=ATClo32g1743588762&tid=ATClo32g1743588762&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom&tn=TXN821174358876244&tid=ATClo32g1743588762'}}
+2025-04-02 15:42:41,304 - INFO - === QR GENERATION === Payment URL with QR: https://ekqr.live/payment9/instant-pay/4e1fb51f461e473552df002bc97191961bf7bbaabf97a09dd0cf0ed4d79bb90b
+2025-04-02 15:42:41,304 - INFO - === QR REDIRECT === Redirecting user to payment gateway URL
+2025-04-02 15:44:19,219 - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-02 15:44:19,220 - INFO - Payment form submitted: Amount=1, Mobile=9680457365, Email=hardiksv95@gmail.com
+2025-04-02 15:44:19,220 - INFO - Generated order_id: b06d1f87be95
+2025-04-02 15:44:19,220 - INFO - Redirect URL: https://demopay-2.onrender.com/payment-success?order_id=b06d1f87be95
+2025-04-02 15:44:19,220 - INFO - Configured redirect URL: https://demopay-2.onrender.com/payment-success?order_id=b06d1f87be95
+2025-04-02 15:44:19,229 - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-02 15:44:19,231 - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-02 15:44:19,232 - INFO - === QR REQUEST === Payload: {'customer_mobile': '9680457365', 'user_token': 'd4c92f5024a853fb0e598c1dd2f01528', 'amount': '1', 'order_id': 'b06d1f87be95', 'redirect_url': 'https://demopay-2.onrender.com/payment-success?order_id=b06d1f87be95', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-02 15:44:19,927 - INFO - === QR RESPONSE === Status Code: 200
+2025-04-02 15:44:19,928 - INFO - === QR RESPONSE === Data: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': 'b06d1f87be95', 'payment_url': 'https://ekqr.live/payment9/instant-pay/d4f3a3dc35d447e2b7feef08a0fca62cb8a06c14f03857fd9d7e46a4acc1e076', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom&am=1&cu=INR&tn=ATC9TxZP1743588861&tid=ATC9TxZP1743588861&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom&tn=TXN548174358886158&tid=ATC9TxZP1743588861'}}
+2025-04-02 15:44:19,936 - INFO - === QR GENERATION === Payment URL with QR: https://ekqr.live/payment9/instant-pay/d4f3a3dc35d447e2b7feef08a0fca62cb8a06c14f03857fd9d7e46a4acc1e076
+2025-04-02 15:44:19,936 - INFO - === QR REDIRECT === Redirecting user to payment gateway URL
