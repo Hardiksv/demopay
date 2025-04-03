@@ -1746,3 +1746,144 @@ sqlite3.OperationalError: table transactions has no column named request_log
  * Running on http://127.0.0.1:10000
  * Running on http://192.168.1.6:10000
 2025-04-02 16:04:49,815 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-03 11:30:53,754 - __main__ - INFO - Added request_log column to transactions table
+2025-04-03 11:30:53,769 - __main__ - INFO - Added response_log column to transactions table
+2025-04-03 11:30:53,769 - __main__ - INFO - Database initialized and upgraded successfully!
+2025-04-03 11:30:53,840 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:10000
+ * Running on http://192.168.1.5:10000
+2025-04-03 11:30:53,841 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-03 11:30:59,305 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 11:30:59] "GET / HTTP/1.1" 200 -
+2025-04-03 11:30:59,472 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 11:30:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-03 11:31:01,816 - qr_payment - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-03 11:31:01,819 - qr_payment - INFO - Payment form submitted: Amount=1, Mobile=9680457365, Email=hardiksv95@gmail.com
+2025-04-03 11:31:01,819 - __main__ - INFO - Processing payment: Amount=1, Mobile=9680457365, Email=hardiksv95@gmail.com
+2025-04-03 11:31:01,819 - qr_payment - INFO - Generated order_id: b3932ca8785f
+2025-04-03 11:31:01,821 - qr_payment - INFO - Configured redirect URL: https://demopay1.onrender.com/payment-status?order_id=b3932ca8785f
+2025-04-03 11:31:01,828 - qr_payment - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-03 11:31:01,829 - qr_payment - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-03 11:31:01,831 - qr_payment - INFO - === QR REQUEST === Payload: {'customer_mobile': '9680457365', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'b3932ca8785f', 'redirect_url': 'https://demopay1.onrender.com/payment-status?order_id=b3932ca8785f', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-03 11:31:02,599 - qr_payment - INFO - === QR RESPONSE === Status Code: 400
+2025-04-03 11:31:02,599 - qr_payment - ERROR - === QR RESPONSE ERROR === Failed with status code: 400
+2025-04-03 11:31:02,599 - qr_payment - ERROR - Response content: {"status":false,"message":"Your Plan Expired Please Renew"}
+2025-04-03 11:31:02,607 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 11:31:02] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-03 11:31:02,623 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 11:31:02] "GET / HTTP/1.1" 200 -
+2025-04-03 11:31:19,630 - __main__ - INFO - Database initialized and upgraded successfully!
+2025-04-03 11:31:19,649 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:10000
+ * Running on http://192.168.1.5:10000
+2025-04-03 11:31:19,650 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-03 11:31:23,533 - werkzeug - INFO - 192.168.1.5 - - [03/Apr/2025 11:31:23] "GET / HTTP/1.1" 200 -
+2025-04-03 11:31:23,707 - werkzeug - INFO - 192.168.1.5 - - [03/Apr/2025 11:31:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-03 11:31:30,938 - qr_payment - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-03 11:31:30,941 - qr_payment - INFO - Payment form submitted: Amount=1, Mobile=9680457365, Email=hardiksv95@gmail.com
+2025-04-03 11:31:30,944 - __main__ - INFO - Processing payment: Amount=1, Mobile=9680457365, Email=hardiksv95@gmail.com
+2025-04-03 11:31:30,945 - qr_payment - INFO - Generated order_id: c1de44de4d38
+2025-04-03 11:31:30,947 - qr_payment - INFO - Configured redirect URL: https://demopay1.onrender.com/payment-status?order_id=c1de44de4d38
+2025-04-03 11:31:30,952 - qr_payment - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-03 11:31:30,954 - qr_payment - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-03 11:31:30,954 - qr_payment - INFO - === QR REQUEST === Payload: {'customer_mobile': '9680457365', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': 'c1de44de4d38', 'redirect_url': 'https://demopay1.onrender.com/payment-status?order_id=c1de44de4d38', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-03 11:31:31,622 - qr_payment - INFO - === QR RESPONSE === Status Code: 400
+2025-04-03 11:31:31,622 - qr_payment - ERROR - === QR RESPONSE ERROR === Failed with status code: 400
+2025-04-03 11:31:31,623 - qr_payment - ERROR - Response content: {"status":false,"message":"Your Plan Expired Please Renew"}
+2025-04-03 11:31:31,632 - werkzeug - INFO - 192.168.1.5 - - [03/Apr/2025 11:31:31] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-03 11:31:31,646 - werkzeug - INFO - 192.168.1.5 - - [03/Apr/2025 11:31:31] "GET / HTTP/1.1" 200 -
+2025-04-03 11:34:11,310 - qr_payment - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-03 11:34:11,312 - qr_payment - INFO - Payment form submitted: Amount=1, Mobile=9680457365, Email=hardiksv95@gmail.com
+2025-04-03 11:34:11,312 - __main__ - INFO - Processing payment: Amount=1, Mobile=9680457365, Email=hardiksv95@gmail.com
+2025-04-03 11:34:11,314 - qr_payment - INFO - Generated order_id: 2c1aa639ce0b
+2025-04-03 11:34:11,317 - qr_payment - INFO - Configured redirect URL: https://demopay1.onrender.com/payment-status?order_id=2c1aa639ce0b
+2025-04-03 11:34:11,330 - qr_payment - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-03 11:34:11,331 - qr_payment - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-03 11:34:11,332 - qr_payment - INFO - === QR REQUEST === Payload: {'customer_mobile': '9680457365', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '2c1aa639ce0b', 'redirect_url': 'https://demopay1.onrender.com/payment-status?order_id=2c1aa639ce0b', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-03 11:34:12,066 - qr_payment - INFO - === QR RESPONSE === Status Code: 400
+2025-04-03 11:34:12,067 - qr_payment - ERROR - === QR RESPONSE ERROR === Failed with status code: 400
+2025-04-03 11:34:12,067 - qr_payment - ERROR - Response content: {"status":false,"message":"Your Plan Expired Please Renew"}
+2025-04-03 11:34:12,069 - werkzeug - INFO - 192.168.1.5 - - [03/Apr/2025 11:34:12] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-03 11:34:12,087 - werkzeug - INFO - 192.168.1.5 - - [03/Apr/2025 11:34:12] "GET / HTTP/1.1" 200 -
+2025-04-03 11:34:26,926 - qr_payment - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-03 11:34:26,928 - qr_payment - INFO - Payment form submitted: Amount=1, Mobile=9680457365, Email=hardiksv95@gmail.com
+2025-04-03 11:34:26,929 - __main__ - INFO - Processing payment: Amount=1, Mobile=9680457365, Email=hardiksv95@gmail.com
+2025-04-03 11:34:26,930 - qr_payment - INFO - Generated order_id: 9e427751de12
+2025-04-03 11:34:26,933 - qr_payment - INFO - Configured redirect URL: https://demopay1.onrender.com/payment-status?order_id=9e427751de12
+2025-04-03 11:34:26,946 - qr_payment - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-03 11:34:26,947 - qr_payment - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-03 11:34:26,947 - qr_payment - INFO - === QR REQUEST === Payload: {'customer_mobile': '9680457365', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '9e427751de12', 'redirect_url': 'https://demopay1.onrender.com/payment-status?order_id=9e427751de12', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-03 11:34:27,655 - qr_payment - INFO - === QR RESPONSE === Status Code: 400
+2025-04-03 11:34:27,655 - qr_payment - ERROR - === QR RESPONSE ERROR === Failed with status code: 400
+2025-04-03 11:34:27,655 - qr_payment - ERROR - Response content: {"status":false,"message":"Your Plan Expired Please Renew"}
+2025-04-03 11:34:27,667 - werkzeug - INFO - 192.168.1.5 - - [03/Apr/2025 11:34:27] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-03 11:34:27,682 - werkzeug - INFO - 192.168.1.5 - - [03/Apr/2025 11:34:27] "GET / HTTP/1.1" 200 -
+2025-04-03 11:35:25,799 - werkzeug - INFO - 192.168.1.5 - - [03/Apr/2025 11:35:25] "GET / HTTP/1.1" 200 -
+2025-04-03 11:35:26,009 - werkzeug - INFO - 192.168.1.5 - - [03/Apr/2025 11:35:26] "GET / HTTP/1.1" 200 -
+2025-04-03 11:35:26,524 - werkzeug - INFO - 192.168.1.5 - - [03/Apr/2025 11:35:26] "GET / HTTP/1.1" 200 -
+2025-04-03 11:35:26,748 - werkzeug - INFO - 192.168.1.5 - - [03/Apr/2025 11:35:26] "GET / HTTP/1.1" 200 -
+2025-04-03 11:36:54,707 - __main__ - INFO - Database initialized and upgraded successfully!
+2025-04-03 11:36:54,738 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:10000
+ * Running on http://192.168.1.5:10000
+2025-04-03 11:36:54,739 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-03 11:36:59,958 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 11:36:59] "GET / HTTP/1.1" 200 -
+2025-04-03 11:37:05,885 - qr_payment - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-03 11:37:05,886 - qr_payment - INFO - Payment form submitted: Amount=1, Mobile=9680457365, Email=hardiksv95@gmail.com
+2025-04-03 11:37:05,886 - __main__ - INFO - Processing payment: Amount=1, Mobile=9680457365, Email=hardiksv95@gmail.com
+2025-04-03 11:37:05,886 - qr_payment - INFO - Generated order_id: 6859843e2850
+2025-04-03 11:37:05,886 - qr_payment - INFO - Configured redirect URL: https://demopay1.onrender.com/payment-status?order_id=6859843e2850
+2025-04-03 11:37:05,893 - qr_payment - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-03 11:37:05,894 - qr_payment - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-03 11:37:05,894 - qr_payment - INFO - === QR REQUEST === Payload: {'customer_mobile': '9680457365', 'user_token': '5e491c82fc0f1aedddc986828462fc84', 'amount': '1', 'order_id': '6859843e2850', 'redirect_url': 'https://demopay1.onrender.com/payment-status?order_id=6859843e2850', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-03 11:37:06,650 - qr_payment - INFO - === QR RESPONSE === Status Code: 400
+2025-04-03 11:37:06,650 - qr_payment - ERROR - === QR RESPONSE ERROR === Failed with status code: 400
+2025-04-03 11:37:06,650 - qr_payment - ERROR - Response content: {"status":false,"message":"Your Plan Expired Please Renew"}
+2025-04-03 11:37:06,666 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 11:37:06] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-03 11:37:06,673 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 11:37:06] "GET / HTTP/1.1" 200 -
+2025-04-03 11:38:07,216 - __main__ - INFO - Database initialized and upgraded successfully!
+2025-04-03 11:38:07,235 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:10000
+ * Running on http://192.168.1.5:10000
+2025-04-03 11:38:07,235 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-03 11:38:10,838 - werkzeug - INFO - 192.168.1.5 - - [03/Apr/2025 11:38:10] "GET / HTTP/1.1" 200 -
+2025-04-03 11:38:14,236 - qr_payment - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-03 11:38:14,238 - qr_payment - INFO - Payment form submitted: Amount=1, Mobile=9680457365, Email=hardiksv95@gmail.com
+2025-04-03 11:38:14,240 - __main__ - INFO - Processing payment: Amount=1, Mobile=9680457365, Email=hardiksv95@gmail.com
+2025-04-03 11:38:14,242 - qr_payment - INFO - Generated order_id: 3890a4c0d9ad
+2025-04-03 11:38:14,243 - qr_payment - INFO - Configured redirect URL: https://demopay1.onrender.com/payment-status?order_id=3890a4c0d9ad
+2025-04-03 11:38:14,251 - qr_payment - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-03 11:38:14,253 - qr_payment - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-03 11:38:14,254 - qr_payment - INFO - === QR REQUEST === Payload: {'customer_mobile': '9680457365', 'user_token': 'd4c92f5024a853fb0e598c1dd2f01528', 'amount': '1', 'order_id': '3890a4c0d9ad', 'redirect_url': 'https://demopay1.onrender.com/payment-status?order_id=3890a4c0d9ad', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-03 11:38:14,925 - qr_payment - INFO - === QR RESPONSE === Status Code: 200
+2025-04-03 11:38:14,927 - qr_payment - INFO - === QR RESPONSE === Data: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '3890a4c0d9ad', 'payment_url': 'https://ekqr.live/payment9/instant-pay/71776d6d133682084f67cdd43f2b920e59312e701d2ad59846bfed841a8eead2', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom&am=1&cu=INR&tn=ATC06MDs1743660494&tid=ATC06MDs1743660494&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom&tn=TXN443174366049468&tid=ATC06MDs1743660494'}}
+2025-04-03 11:38:14,933 - qr_payment - INFO - === QR GENERATION === Payment URL with QR: https://ekqr.live/payment9/instant-pay/71776d6d133682084f67cdd43f2b920e59312e701d2ad59846bfed841a8eead2
+2025-04-03 11:38:14,933 - qr_payment - INFO - === QR REDIRECT === Redirecting user to payment gateway URL
+2025-04-03 11:38:14,936 - werkzeug - INFO - 192.168.1.5 - - [03/Apr/2025 11:38:14] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-03 11:56:51,242 - __main__ - INFO - Database initialized and upgraded successfully!
+2025-04-03 11:56:51,290 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:10000
+ * Running on http://192.168.1.5:10000
+2025-04-03 11:56:51,290 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-03 11:56:55,399 - werkzeug - INFO - 192.168.1.5 - - [03/Apr/2025 11:56:55] "GET / HTTP/1.1" 200 -
+2025-04-03 11:56:58,565 - qr_payment - INFO - ===== QR PAYMENT FLOW START =====
+2025-04-03 11:56:58,566 - qr_payment - INFO - Payment form submitted: Amount=1, Mobile=9680457365, Email=hardiksv95@gmail.com
+2025-04-03 11:56:58,568 - __main__ - INFO - Processing payment: Amount=1, Mobile=9680457365, Email=hardiksv95@gmail.com
+2025-04-03 11:56:58,568 - qr_payment - INFO - Generated order_id: 47780839111c
+2025-04-03 11:56:58,568 - qr_payment - INFO - Configured redirect URL: https://demopay1.onrender.com/payment-status?order_id=47780839111c
+2025-04-03 11:56:58,577 - qr_payment - INFO - === QR REQUEST === Sending API request to: https://pay.imb.org.in/api/create-order
+2025-04-03 11:56:58,578 - qr_payment - INFO - === QR REQUEST === Headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+2025-04-03 11:56:58,579 - qr_payment - INFO - === QR REQUEST === Payload: {'customer_mobile': '9680457365', 'user_token': 'd4c92f5024a853fb0e598c1dd2f01528', 'amount': '1', 'order_id': '47780839111c', 'redirect_url': 'https://demopay1.onrender.com/payment-status?order_id=47780839111c', 'remark1': 'hardiksv95@gmail.com', 'remark2': 'Payment via Flask app'}
+2025-04-03 11:56:59,392 - qr_payment - INFO - === QR RESPONSE === Status Code: 200
+2025-04-03 11:56:59,393 - qr_payment - INFO - === QR RESPONSE === Data: {'status': True, 'message': 'Order Created Successfully', 'result': {'orderId': '47780839111c', 'payment_url': 'https://ekqr.live/payment9/instant-pay/5ea2eaab394a52b247cb6865d0bc0c455fe5d60fd78f8c7a2af11560cddcbf73', 'paytm_link': 'paytmmp://cash_wallet?pa=9413782285@apl&pn=Microcom&am=1&cu=INR&tn=ATCuSAoN1743661619&tid=ATCuSAoN1743661619&mc=4722&&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer', 'bhim_link': 'upi://pay?pa=9413782285@apl&am=1&pn=Microcom&tn=TXN533174366161984&tid=ATCuSAoN1743661619'}}
+2025-04-03 11:56:59,394 - qr_payment - INFO - === QR GENERATION === Payment URL with QR: https://ekqr.live/payment9/instant-pay/5ea2eaab394a52b247cb6865d0bc0c455fe5d60fd78f8c7a2af11560cddcbf73
+2025-04-03 11:56:59,394 - qr_payment - INFO - === QR REDIRECT === Redirecting user to payment gateway URL
+2025-04-03 11:56:59,403 - werkzeug - INFO - 192.168.1.5 - - [03/Apr/2025 11:56:59] "[32mPOST /process-payment HTTP/1.1[0m" 302 -
+2025-04-03 13:01:13,184 - __main__ - INFO - Database initialized and upgraded successfully!
+2025-04-03 13:01:13,241 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:10000
+ * Running on http://192.168.1.5:10000
+2025-04-03 13:01:13,242 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-03 13:01:18,056 - werkzeug - INFO - 192.168.1.5 - - [03/Apr/2025 13:01:18] "GET / HTTP/1.1" 200 -

@@ -36,7 +36,7 @@ app.secret_key = '094f4cacd1e7b665821c40c8a005f1abe9d7e25fe0897c4459d3132a1e55f1
 
 # Payment Gateway Configuration
 API_URL = "https://pay.imb.org.in/api/create-order"
-API_KEY = "5e491c82fc0f1aedddc986828462fc84"
+API_KEY = "d4c92f5024a853fb0e598c1dd2f01528"
 
 # Initialize database
 def init_db():
@@ -130,7 +130,7 @@ def process_payment():
 
         # Get the host URL dynamically
         host_url = request.host_url.rstrip('/')
-        redirect_url = f"{host_url}/payment-status?order_id={order_id}"
+        redirect_url = f"https://demopay1.onrender.com/payment-status?order_id={order_id}"
         qr_logger.info(f"Configured redirect URL: {redirect_url}")
         
         payload = {
@@ -309,7 +309,7 @@ def payment_status():
     else:
         qr_logger.info(f"=== QR REDIRECT CALLBACK === Query parameters: {dict(request.args)}")
         
-        order_id = request.args.get('order_id')
+        order_id = request.args.get("order_id").strip('"')
         qr_logger.info(f"=== QR REDIRECT CALLBACK === Extracted Order ID: {order_id}")
 
         if not order_id:
